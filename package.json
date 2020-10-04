@@ -1,7 +1,7 @@
 {
-  "name": "total-child-theme",
-  "version": "4.0.0",
-  "description": "So a Fig and a Mint walk into a bar...",
+  "name": "bridge-child",
+  "version": "1.0.0",
+  "description": "Custom sass and javascript add-on for themes",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/figmints/figpress.git"
   },
-  "author": "Ian @ Figmints.com",
+  "author": "DevGuru",
   "license": "none",
   "devDependencies": {
     "autoprefixer": "^7.2.4",
@@ -54,8 +54,8 @@
     "IE 11"
   ],
   "bugs": {
-    "url": "https://github.com/figmints/figpress/issues"
+    "url": "https://github.com/tylerdcorwin/ri-recycle/issues"
   },
-  "homepage": "https://github.com/figmints/figpress#readme",
+  "homepage": "https://github.com/tylerdcorwin/ri-recycle#readme",
   "dependencies": {}
 }

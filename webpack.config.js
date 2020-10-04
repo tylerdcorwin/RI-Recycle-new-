@@ -15,13 +15,13 @@ if (isDev){
   entry.push("webpack/hot/only-dev-server") // WebpackDevServer host and port)
 }
 
-entry.push('./wp-content/themes/Total-4.9.9.2/' + config.name + '/src/js/main.js')
+entry.push('./wp-content/themes/' + config.name + '/src/js/main.js')
 
 // Setup output
 var output = {
-  path: path.join(__dirname, 'wp-content', 'themes', 'Total-4.9.9.2', config.name, 'public'),
+  path: path.join(__dirname, 'wp-content', 'themes', 'bridge-child', config.name, 'public'),
   filename: 'js/app.min.js',
-  publicPath: '/wp-content/themes/Total-4.9.9.2/' + config.name + '/public/'
+  publicPath: '/wp-content/themes/' + config.name + '/public/'
 }
 
 if (isDev){

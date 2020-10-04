@@ -1,0 +1,227 @@
+.calculator-hero-wrap
+  position: relative
+  width: 100%
+  margin-bottom: 50px
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+  .calculator-hero-title
+    padding: 165px 0px
+    text-shadow: 2px 2px 20px #000000
+    color: $white
+    text-align: center
+
+.main-content-wrap
+  position: relative
+  width: 100%
+  margin-bottom: 50px
+
+.calculator-hero-wrap
+  width: 100%
+  position: relative
+
+.calculator-con
+  display: flex
+  flex-wrap: wrap
+  box-shadow: 0 2px 80px 0 rgba(0,0,0,0.1)
+  margin-bottom: 85px
+
+  .form-con
+    +mobile-up
+      width: 100%
+    +tablet-up
+      width: 71%
+    padding: 30px 40px
+
+  p
+    margin-bottom: 10px
+
+  .dollar-amount
+    position: relative
+
+    &::after
+      position: absolute
+      content: '$'
+      top: 0
+      left: 10px
+
+  input[type="number"], input[type="text"]
+    width: 100%
+    border: 1px solid $purple
+    background: $white
+    margin-bottom: 35px
+    padding-left: 25px
+
+  .rs-range
+    margin-top: 29px
+    margin-bottom: 60px
+    width: 100%
+    -webkit-appearance: none
+
+    &:focus
+      outline: none
+
+    &::-webkit-slider-runnable-track
+      width: 100%
+      height: 4px
+      cursor: pointer
+      box-shadow: none
+      background: #dedede
+      border-radius: 0px
+      border: 0px solid #010101
+
+    &::-moz-range-track
+      width: 100%
+      height: 4px
+      cursor: pointer
+      box-shadow: none
+      background: #dedede
+      border-radius: 0px
+      border: 0px solid #010101
+
+    &::-webkit-slider-thumb
+      box-shadow: none
+      border: 4px solid #9b7fcb
+      box-shadow: 0px 10px 10px rgba(0,0,0,0.25)
+      height: 22px
+      width: 22px
+      border-radius: 22px
+      background: #fff
+      cursor: pointer
+      -webkit-appearance: none
+      margin-top: -10px
+
+    &::-moz-range-thumb
+      box-shadow: none
+      border: 4px solid #9b7fcb
+      box-shadow: 0px 10px 10px rgba(0,0,0,0.25)
+      height: 22px
+      width: 22px
+      border-radius: 22px
+      background: #fff
+      cursor: pointer
+      -webkit-appearance: none
+      margin-top: -10px
+
+    &::-moz-focus-outer
+      border: 0
+
+  .rs-value
+    position: relative
+    transform-origin: center center
+    display: block
+    width: 15px
+    height: 15px
+    background: transparent
+    line-height: 30px
+    text-align: center
+    box-sizing: border-box
+    margin-top: -45px
+    color: #9b7fcb
+    margin-bottom: 30px
+
+  .results-wrap
+    +mobile-up
+      width: 100%
+    +tablet-up
+      width: 29%
+    display: flex
+    background-color: #9b7fcb
+    position: relative
+
+  .results-con
+    margin: auto
+
+  .results
+    padding: 20px
+
+    h6, h1
+      color: $white
+      text-align: center
+
+    h1
+      +mobile-up
+        font-size: 44px
+      +tablet-up
+        font-size: 28px
+      +desktop
+        font-size: 44px
+      font-family: 'Open Sans'
+      font-weight: bold
+      font-style: normal
+      margin-bottom: 45px
+
+  .tuition-icon
+    position: relative
+    width: 58px
+    height: 58px
+    background-image: url('../img/icons/tuition.svg')
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    margin-left: auto
+    margin-right: auto
+
+  .student-amount:not(:last-of-type)
+    border-bottom: 1px solid rgba(255,255,255, 0.5)
+
+  .student-amount
+    position: relative
+    display: flex
+    justify-content: space-between
+    padding-bottom: 20px
+    margin-bottom: 0px
+    margin-top: 20px
+
+    p
+      color: $white
+
+    .amount
+      font-weight: bold
+
+  .application
+    position: relative
+    width: 100%
+    border: 1px solid $white
+    text-align: center
+    font-size: 18px
+    font-weight: bold
+    color: $white
+    display: flex
+    justify-content: center
+    padding: 10px
+    margin-bottom: 25px
+
+    &:hover
+      text-decoration: none
+
+  .disclaimer
+    color: $white
+    text-align: center
+
+.page-template-calculator-template
+  header.page-header
+    display: none
+
+#top-bar-wrap
+	background-color: #614975
+
+#top-bar
+	margin-right: 80px
+
+#top-bar li a
+	color: #fff
+	font-size: 16px
+	line-height: 20px
+
+#top-bar .top-bar-left
+	margin-left: auto
+	margin-right: 0px
+
+.navbar-style-one .dropdown-menu>li.menu-item>a
+	color: #000
+	font-size: 16px
+
+.home .page-header, .home #sidebar
+	display: none
