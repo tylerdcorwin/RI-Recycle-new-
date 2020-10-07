@@ -1,23 +1,15 @@
-// @import url("https://use.typekit.net/vyt1kqn.css");
-//
-//
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:ital,400,600,700&display=swap');
+
 // // Typography
-// $base-font-family: effra, sans-serif;;
-// $heading-font-family: $base-font-family;
-//
-// // Font Sizes
-// $base-font-size: 1em;
-//
-// // Line height
-// $base-line-height: 1.5;
-// $heading-line-height: 1.2;
-//
-// // Font Weight
-// $light-font: 300;
-// $regular-font: 400;
-// $medium-font: 500;
-// $bold-font: 700;
-// $heavy-font: 900;
+$base-font-family: 'Work Sans', sans-serif;;
+
+
+// Font Weight
+$light-font: 300;
+$regular-font: 400;
+$medium-font: 500;
+$bold-font: 700;
+$heavy-font: 900;
 
 
 //brand-colors
@@ -42,46 +34,6 @@ $white: #ffffff;
 $mango: #f99d22;
 $sunkist: #f2d52b;
 $limetime: #c3e436;
-
+$themegreen: #52AB5E;
+$black: #000;
 $purple: #614975;
-
-// $transparent-black-dark: rgba(64, 85, 112, 0.5);
-// $hero-bg-overlay: rgba(242, 245, 244, 0.5);
-// $landing-page-hero-overlay: rgba(242, 245, 244, 0.8);
-// $box-shadow: rgba(0, 0, 0, 0.3);
-// $video-overlay:  rgba(90, 103, 112, .7);
-//
-//
-// // Other Sizes
-// $base-border-radius: 3px;
-// $base-spacing: $base-line-height * 1em;
-// $small-spacing: $base-spacing / 2;
-// $base-z-index: 0;
-//
-//
-// // Colors
-// $blue: #477dca;
-// $dark-gray: #333;
-// $medium-gray: #999;
-// $light-gray: #ddd;
-//
-//
-// // Font Colors
-// $base-font-color: $dark-gray;
-// $action-color: $blue;
-//
-// // Border
-// $base-border-color: $light-gray;
-// $base-border: 1px solid $base-border-color;
-//
-// // Background Colors
-// $base-background-color: #fff;
-// $secondary-background-color: tint($base-border-color, 75%);
-//
-// // Forms
-// $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-// $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
-//
-// // Animations
-// $base-duration: 150ms;
-// $base-timing: ease;

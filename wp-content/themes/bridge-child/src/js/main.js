@@ -38,6 +38,8 @@
 import './calculator/calculator.js'
 
 import './calculator/rangeSlider.js'
+
+import './module.js'
 //
 // import './modules/file-upload.js'
 //

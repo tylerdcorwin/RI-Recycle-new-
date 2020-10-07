@@ -1,9 +1,11 @@
 /*********************************************
  *
- *        Main Figpress Styles
+ *        Main Styles
  *
  *********************************************/
 
  @import 'mixins/grid-settings';
  @import 'base/variables';
- // @import 'modules/calculator';
+ @import 'base/typography';
+ @import 'modules/calculator';
+ @import 'modules/calc-hero';

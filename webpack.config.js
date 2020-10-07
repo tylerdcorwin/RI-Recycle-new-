@@ -19,7 +19,7 @@ entry.push('./wp-content/themes/' + config.name + '/src/js/main.js')
 
 // Setup output
 var output = {
-  path: path.join(__dirname, 'wp-content', 'themes', 'bridge-child', config.name, 'public'),
+  path: path.join(__dirname, 'wp-content', 'themes', config.name, 'public'),
   filename: 'js/app.min.js',
   publicPath: '/wp-content/themes/' + config.name + '/public/'
 }

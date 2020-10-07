@@ -1,0 +1,37 @@
+.custom-wrapper
+  h1, h2, h3, h4, h5 , h6, p, a
+    font-family: $base-font-family
+    margin-bottom: 15px
+
+  h1
+    +responsive-type(54px, 74px)
+
+  h2
+    +responsive-type(44px, 56px)
+
+  h3
+    +responsive-type(33px, 45px)
+
+  h4
+    +responsive-type(27px, 37px)
+
+  h5
+    +responsive-type(18px, 26px)
+
+  h6
+    +responsive-type(16px, 20px)
+
+  p, a
+    +responsive-type(18px, 26px)
+    margin-top: 0px
+
+.ty-btn
+  border-radius: 3px
+  background-color: $themegreen
+  color: $white
+  font-size: 15px
+  text-align: center
+  padding: 12px 24px
+
+  &:hover
+    color: $white
