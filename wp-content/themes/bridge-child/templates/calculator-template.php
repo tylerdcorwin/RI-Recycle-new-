@@ -17,6 +17,7 @@ get_header(); ?>
   $hero_subtitle = get_field('calc_hero_subtitle');
   $hero_btn = get_field('calc_hero_button');
   $calculator_content = get_field('calc_content');
+	$notes_content = get_field('calc_notes');
 ?>
 <div class="custom-wrapper">
 
@@ -52,8 +53,18 @@ get_header(); ?>
 
   <section class="calculator-wrap">
     <div class="outer-container">
-      <h3>Food Waste Calculator</h3>
+      <h3 class="main-title">RI Schools Food Waste Estimator</h3>
       <div id="calculator"></div>
+    </div>
+  </section>
+
+	<section class="calculator-wys-wrap">
+    <div class="outer-container">
+      <?php if ( $notes_content ) { ?>
+        <div class="wys-content-con">
+          <?php echo $notes_content; ?>
+        </div>
+      <?php } ?>
     </div>
   </section>
 

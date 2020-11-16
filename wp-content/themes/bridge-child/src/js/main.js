@@ -35,9 +35,11 @@
 //
 // import './resources/resources.js'
 //
-import './calculator/calculator.js'
+import './calculator2/calculator.js'
 
-import './calculator/rangeSlider.js'
+import './calculator2/cards.js'
+
+// import './calculator/rangeSlider.js'
 
 import './module.js'
 //
