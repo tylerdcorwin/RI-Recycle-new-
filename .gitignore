@@ -11,6 +11,8 @@ wp-content/themes/**/node_modules/
 wp-content/themes/**/bower_components/
 wp-content/themes/**/browserSync.json
 
+wp-content/mysql.sql
+
 
 !databases
 !gotyourback.sh
