@@ -95,7 +95,7 @@ class Calculator extends Component {
                 <input type="number" min="0" onChange={this.handleEnrollmentChange} />
               </form>
               <div className="cta-con">
-                <a className="help-link" href="https://www.google.com" target="_blank">Click Here if you don't know your Enrollment Number</a>
+                <a className="help-link" href="http://www.eride.ri.gov/reports.asp" target="_blank">Click Here if you don't know your Enrollment Number</a>
               </div>
             </div>
             <div className="btn-con">
