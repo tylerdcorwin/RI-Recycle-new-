@@ -4,9 +4,9 @@ import { Totals } from './totals';
 
 const requestUrl = site_url + '/wp-json/wp/v2/media/';
 let tonConversion = 2000;
-let elemUntouched = 0.14;
-let middleUntouched = 0.14;
-let highUntouched = 0.14;
+let elemUntouched = 0.18;
+let middleUntouched = 0.26;
+let highUntouched = 0.113;
 const schoolCard = document.querySelector('.school-choice');
 const enrollCard = document.querySelector('.enrollment');
 const resultsCard = document.querySelector('.results');
@@ -37,14 +37,14 @@ class Calculator extends Component {
 
   handleElementaryClick() {
     this.setState({
-      schoolHiddenValue: 37,
+      schoolHiddenValue: 47,
       untouched: elemUntouched
     });
   }
 
   handleMiddleClick() {
     this.setState({
-      schoolHiddenValue: 21.7,
+      schoolHiddenValue: 39.3,
       untouched: middleUntouched
     });
   }
