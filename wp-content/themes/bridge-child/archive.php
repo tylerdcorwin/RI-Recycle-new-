@@ -33,7 +33,7 @@
           ?>
           <a href="<?php the_permalink(); ?>" class="indiv-dashboard">
             <div class="post-image" style="background-image: url(<?php echo $bg_img['url']; ?>)"></div>
-            <h1><?php echo get_the_title(); ?></h1>
+            <h2><?php echo get_the_title(); ?></h2>
             <p class="ri-excerpt"><?php echo get_the_excerpt(); ?></p>
             <p class="ri-school"><?php echo $school_name . ', ' . $school_location; ?></p>
             <p class="waste-diverted">Tons of Food Waste Diverted: <strong><?php echo $temp_waste_diverted; ?></strong></p>

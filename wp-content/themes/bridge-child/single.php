@@ -6,6 +6,7 @@
 
   $school_name = get_field('school_dashboard_school_name');
   $school_type = get_field('school_dashboard_school_type');
+  $school_avg = $school_type === 'Lower School' ? 47 : 39.3;
   $num_days = get_field('school_dashboard_number_of_days');
   $num_students = get_field('school_dashboard_number_of_students');
   $recoverable_food = get_field('school_dashboard_recoverable_food');
@@ -13,7 +14,6 @@
   $liquids = get_field('school_dashboard_liquids');
   $recycling = get_field('school_dashboard_recycling');
   $landfill = get_field('school_dashboard_landfill');
-  $school_avg = $school_type == 'lower' ? 47 : 39.3;
 
   $content1 = get_field('dashboard_content_section');
   $content2 = get_field('dashboard_content_section2');
@@ -31,7 +31,7 @@
   const totalFoodWaste = (recoverableFood + liquids + compost); // 44.7
   const totalCafeteriaWaste = (recoverableFood + liquids + compost + recycleable + landfill); // 62.3
   const foodScraps = (compost/totalCafeteriaWaste)
-  const schoolAvg = 'RI <?php echo $school_name; ?> Avg';
+  const schoolAvg = 'RI <?php echo $school_type; ?> Avg';
   const current = '<?php echo $school_name; ?> Current';
   const goal = '<?php echo $school_name; ?> GOAL';
   const schlAvg = parseFloat(<?php echo $school_avg; ?>);
@@ -113,9 +113,9 @@
       <div class="indiv-post">
         <?php while ( have_posts() ) { the_post(); ?>
 
-          <a href="<?php the_permalink(); ?>" class="indiv-dashboard">
-            <h1><?php echo $school_name; ?></h1>
-          </a>
+          <div class="indiv-dashboard">
+            <h1><?php echo $hero_title; ?></h1>
+          </div>
         <?php } ?>
       </div>
     </div>
