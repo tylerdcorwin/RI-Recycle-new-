@@ -1,0 +1,58 @@
+.dashboard-hero-wrap
+  +mobile-up
+    margin-bottom: 50px
+    margin-top: 0px
+  +tablet-up
+    margin-bottom: 75px
+    margin-top: 100px
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  position: relative
+  width: 100%
+
+  &::after
+    width: 100%
+    height: 100%
+    position: absolute
+    content: ''
+    background-color: rgba(0,0,0,0.4)
+    top: 0
+    left: 0
+
+  h1
+    text-align: center
+    width: 100%
+    padding: 150px 20px
+    color: $white
+    z-index: 1
+    position: relative
+
+.dashboard-content-wrap
+  width: 100%
+  position: relative
+
+  .dashboard-content-con
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  .content-con, #barChart
+    +mobile-up
+      width: 100%
+    +tablet-up
+      width: 48%
+    margin-bottom: 24px
+
+  .pie-chart-con
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 30px
+
+    #piechart, #piechart2
+      +mobile-up
+        width: 100%
+      +tablet-up
+        width: 50%
+      height: 500px

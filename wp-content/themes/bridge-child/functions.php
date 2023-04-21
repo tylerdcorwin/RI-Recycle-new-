@@ -82,3 +82,21 @@ function expose_ACF_fields( $object ) {
 }
 
 add_action( 'rest_api_init', 'create_ACF_meta_in_REST' );
+
+
+function create_posttype() {
+register_post_type( 'news',
+// CPT Options
+array(
+  'labels' => array(
+   'name' => __( 'Dashboards' ),
+   'singular_name' => __( 'Dashboard' )
+  ),
+  'public' => true,
+  'has_archive' => true,
+  'rewrite' => array('slug' => 'dashboards'),
+ )
+);
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
