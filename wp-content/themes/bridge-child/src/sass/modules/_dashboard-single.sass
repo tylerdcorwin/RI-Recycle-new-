@@ -37,23 +37,58 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-
-  .content-con, #barChart
-    +mobile-up
-      width: 100%
-    +tablet-up
-      width: 48%
-    margin-bottom: 24px
+    align-items: center
 
   .pie-chart-con
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+    align-items: center
     margin-bottom: 30px
+    flex-direction: column
+    background: $white
 
-    #piechart, #piechart2
-      +mobile-up
-        width: 100%
-      +tablet-up
-        width: 50%
-      height: 500px
+  #piechart, #piechart2
+    +mobile-up
+      width: 100%
+    +tablet-up
+      width: 50%
+    height: 300px !important
+
+  .content-with-img-con, .content-with-stats, .content-with-bar-chart
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 60px
+
+  .content-with-img-con, .content-with-stats
+    +mobile-up
+      flex-direction: column
+    +tablet-up
+      flex-direction: row-reverse
+
+  .content-con, .img-con, .barChart, .stats-con
+    +mobile-up
+      width: 100%
+      margin-bottom: 40px
+    +tablet-up
+      width: 48%
+      margin-bottom: 24px
+
+  .img-con
+    .calcs
+      margin-bottom: 24px
+
+    img
+      max-height: 500px
+
+  .stats-con
+    display: flex
+    flex-direction: column
+
+    h5
+      margin-bottom: 12px
+
+  .calc-con
+    margin-top: 24px
