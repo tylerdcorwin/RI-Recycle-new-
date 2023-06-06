@@ -27,6 +27,7 @@
           $school_location = get_field('school_dashboard_school_loacation');
           $bg_img = get_field('dashboard_hero_background_image');
           $prev_year_diverted = get_field('prev_year_diverted');
+          $prev_year_diverted_sharetable = get_field('prev_year_share_table');
           $food_waste_per_student = (($liquids + $food_scraps) * $num_days / $num_students);
           $total_food_waste = ($liquids + $recoverable_food + $food_scraps); // 44.7
 
@@ -35,6 +36,7 @@
           $school_current = ($total_food_waste) * 180/$num_students;
           $food_waste_pervention = $num_students * (39.5 - $school_current) * ($num_days/180); //4866
           $food_waste_pervented_metric_tons = ($food_waste_pervention * 3.1)/2204; //6.8
+          $share_table_recovery = ($num_days * $recoverable_food) + $prev_year_diverted_sharetable;
 
           // $temp_waste_diverted = get_field('school_dashboard_temp_tons_of_food_waste_diverted');
           // $temp_food_recovered = get_field('school_dashboard_temp_lbs_of_food_recovered');
@@ -44,8 +46,8 @@
             <h2><?php echo get_the_title(); ?></h2>
             <p class="ri-excerpt"><?php echo get_the_excerpt(); ?></p>
             <p class="ri-school"><?php echo $school_name . ', ' . $school_location; ?></p>
-            <p class="waste-diverted">Tons of Food Waste Diverted: <strong><?php echo round($food_waste_diverted_metric_tons, 2); ?></strong></p>
-            <p class="food-recovered">Lbs. of Food Prevented: <strong><?php echo round($food_waste_pervented_metric_tons, 2); ?></strong></p>
+            <p class="waste-diverted">Tons of Food Waste Diverted: <strong><?php echo round($food_waste_diverted_metric_tons, 2); ?> t</strong></p>
+            <p class="food-recovered">Lbs. of Share Food Recovered: <strong><?php echo round($share_table_recovery, 2); ?> Lbs.</strong></p>
             <p>Food Waste per Student: <strong><?php echo round($school_current, 2); ?> Lbs. per Year</strong></p>
           </a>
         <?php } ?>

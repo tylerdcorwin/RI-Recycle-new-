@@ -3,7 +3,6 @@
   $bg_img = get_field('dashboard_hero_background_image');
   $hero_title = get_field('dashboard_hero_title');
   $hero_subtitle = get_field('dashboard_hero_subtitle');
-
   $school_name = get_field('school_dashboard_school_name');
   $school_type = get_field('school_dashboard_school_type');
   $school_avg = $school_type === 'Lower School' ? 47 : 39.3;
@@ -20,10 +19,11 @@
   $total_food_waste = $recoverable_food + $liquids + $food_scraps;  //39.5
   $total_food_scraps = $liquids + $food_scraps; //44.4
   // 180 is total num of school days
-  $food_waste_per_student = ($liquids + $total_food_waste) * 180/$num_students;
+  $food_waste_per_student = ($recoverable_food + $liquids + $food_scraps) * 180 / $num_students; //21.2
   // 180 is total num of school days
   // 39.3 is middle school baseline
-  $food_waste_pervention = $num_students * 18.1 * ($num_days/180); //4866
+
+  $food_waste_pervention = $num_students * ($school_avg - $food_waste_per_student) * ($num_days/180); //4866
   $food_waste_dirversion = $num_days * $total_food_waste + $prev_year_diverted; //15674
   $share_table_recovery = ($num_days * $recoverable_food) + $prev_year_diverted_sharetable; //971.4
   // 0.45 is conversion factor
