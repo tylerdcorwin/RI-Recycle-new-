@@ -85,6 +85,7 @@
       title: 'Lunch Waste %',
       'width': 400,
       'height': 300,
+      'colors': ['#119618', '#3367CC', '#FF9801']
       // chartArea: {left: 0, top: 0, width: "100%", height: "100%"}
     };
 
@@ -110,6 +111,7 @@
       title: 'Lunch Waste %',
       'width': 400,
       'height': 300,
+      'colors': ['#FF9801', '#976AAC', '#119618', '#3367CC', '#949595']
       // chartArea: {left: 0, top: 0, width: "100%", height: "100%"}
     };
 
@@ -132,6 +134,11 @@
       title: 'Food Waste Per Student',
       legend: {position: 'none'},
       'height': 500,
+      vAxis: {
+        viewWindow: {
+          min: 0
+        }
+      }
     };
 
     var chart = new google.visualization.ColumnChart(
@@ -180,7 +187,7 @@
         <div class="img-con">
           <div class="calcs">
             <?php
-              $food_recovered = $num_days * $total_food_waste + $prev_year_diverted;
+              $food_recovered = $num_days * $recoverable_food + $prev_year_diverted;
             ?>
             <h5>Food Recovered: <?php echo round($food_recovered, 2); ?> lbs.</h5>
             <h5>Meals Created: <?php echo round($meals_created, 2); ?></h5>
