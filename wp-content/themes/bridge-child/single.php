@@ -59,7 +59,8 @@
   const totalFoodWaste = (liquids + compost); // 44.7
   const totalCafeteriaWaste = (recoverableFood + liquids + compost + recycleable + landfill); // 62.3
   const foodScraps = (compost/totalCafeteriaWaste)
-  const schoolAvg = 'RI <?php echo $school_type; ?> Avg';
+  const schoolAvg = parseFloat(<?php echo $school_avg; ?>);
+  const schoolType = 'RI <?php echo $school_type; ?> Avg';
   const current = '<?php echo $school_name; ?> Current';
   const goal = '<?php echo $school_name; ?> GOAL';
   const schlAvg = parseFloat(<?php echo $school_avg; ?>);
@@ -125,7 +126,7 @@
   function drawMultSeries() {
     var data = google.visualization.arrayToDataTable([
       ['School', 'Food Waste', { role: 'style' }],
-      ['RI Middle School Avg', 39.3, '#4284F5'],
+      [schoolType , schoolAvg, '#4284F5'],
       [schoolName, schlCurrent, '#4284F5'],
       [schoolGoal, schlGoal, '#4284F5'],
     ]);
