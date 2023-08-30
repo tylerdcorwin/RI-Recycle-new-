@@ -56,7 +56,7 @@
   const recycleable = parseFloat(<?php echo $recycling; ?>); // 4.4
   const landfill = parseFloat(<?php echo $landfill; ?>); // 13.2
   const compost = parseFloat(<?php echo $food_scraps; ?>); // 39.5
-  const totalFoodWaste = (recoverableFood + liquids + compost); // 44.7
+  const totalFoodWaste = (liquids + compost); // 44.7
   const totalCafeteriaWaste = (recoverableFood + liquids + compost + recycleable + landfill); // 62.3
   const foodScraps = (compost/totalCafeteriaWaste)
   const schoolAvg = 'RI <?php echo $school_type; ?> Avg';
@@ -187,7 +187,7 @@
         <div class="img-con">
           <div class="calcs">
             <?php
-              $food_recovered = $num_days * $recoverable_food + $prev_year_diverted;
+              $food_recovered = $num_days * $recoverable_food + $prev_year_diverted_sharetable;
             ?>
             <h5>Food Recovered: <?php echo round($food_recovered, 2); ?> lbs.</h5>
             <h5>Meals Created: <?php echo round($meals_created, 2); ?></h5>

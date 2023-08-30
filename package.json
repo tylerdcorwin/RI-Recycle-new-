@@ -57,5 +57,7 @@
     "url": "https://github.com/tylerdcorwin/ri-recycle/issues"
   },
   "homepage": "https://github.com/tylerdcorwin/ri-recycle#readme",
-  "dependencies": {}
+  "dependencies": {
+    "ajv": "^6.12.6"
+  }
 }
