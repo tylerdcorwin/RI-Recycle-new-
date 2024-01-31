@@ -5,7 +5,17 @@
   $hero_subtitle = get_field('dashboard_hero_subtitle');
   $school_name = get_field('school_dashboard_school_name');
   $school_type = get_field('school_dashboard_school_type');
-  $school_avg = $school_type === 'Lower School' ? 47 : 39.3;
+
+  if ( $school_type === 'lower') {
+    $school_avg = 47;
+  } else if ( $school_type === 'lower-urban' ) {
+    $school_avg = 63.7;
+  } else if ( $school_type === 'middle' ) {
+    $school_avg = 36.8;
+  } else {
+    $school_avg = 47; 
+  } 
+
   $num_days = get_field('school_dashboard_number_of_days');
   $num_students = get_field('school_dashboard_number_of_students');
 
@@ -153,10 +163,8 @@
 <?php if ( have_posts() ) { ?>
   <section class="dashboard-hero-wrap" style="background-image: url('<?php echo $bg_img['url']; ?>')">
     <div class="outer-container">
-
       <div class="indiv-post">
         <?php while ( have_posts() ) { the_post(); ?>
-
           <div class="indiv-dashboard">
             <h1><?php echo $hero_title; ?></h1>
           </div>
