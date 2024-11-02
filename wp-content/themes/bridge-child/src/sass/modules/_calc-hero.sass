@@ -50,3 +50,30 @@
     +desktop
       width: 67%
     margin: 0px auto
+
+.ri-blog-header
+  +mobile-up
+    padding: 0
+  +tablet-up
+    padding: 110px 0px
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  width: 100%
+  height: 150px
+  position: relative
+  margin-bottom: 25px
+
+  &::after
+    position: absolute
+    content: ''
+    width: 100%
+    height: 100%
+    background-color: rgba($black, 0.4)
+    top: 0
+    left: 0
+
+.ri-post-wrapper
+  margin-bottom: 50px
+
+  .ri-post-details
