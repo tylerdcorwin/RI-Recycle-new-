@@ -1,0 +1,32 @@
+/*********************************************
+ *
+ *        Wysiwyg Form
+ *
+ *********************************************/
+
+.wysiwyg-form-wrap
+  width: 100%
+  position: relative
+  margin-bottom: 100px
+
+  h3
+    margin-bottom: 42px
+
+  .wysiwyg-form-con
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  .content-con
+    +mobile-up
+      width: 100%
+      margin: 0 0 45px
+    +tablet-up
+      width: 48%
+      margin: 0 2% 0 0
+
+  .form-con
+    +mobile-up
+      width: 100%
+    +tablet-up
+      width: 48%

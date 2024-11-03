@@ -1,0 +1,68 @@
+.pagination
+  +boxed-outer-container
+  display: flex
+  justify-content: space-between
+  margin: 30px 0
+
+  .page-numbers
+    +mobile-up
+      display: none
+    +tablet-up
+      display: flex
+    width: 100%
+    justify-content: center
+    margin-left: auto
+    margin-right: auto
+
+  .page-number
+    +responsive-type(18px, 18px)
+    font-family: $base-font-family
+    margin-left: 15px
+    margin-right: 15px
+    position: relative
+    color: $color3
+    text-decoration: underline
+
+    &.active
+      text-decoration: none
+      color: $charcoal
+
+    &::after
+      content: '|'
+      position: absolute
+      top: 0
+      left: 21px
+      color: $medium-gray
+      pointer-events: none
+
+    &:hover
+      text-decoration: none
+
+    &:last-child::after
+      content: ''
+
+  .fig-text-btn
+    &::after
+      color: $color3
+
+  .fig-text-btn.left
+    &::after
+      +mobile-up
+        right: 52px
+      +tablet-up
+        right: 64px
+      content: "\F104"
+      transition: right 300ms ease
+
+    &:hover, &:focus, &:active
+      &::after
+        +mobile-up
+          right: 57px
+        +tablet-up
+          right: 69px
+
+  .fig-text-btn.right
+    margin-left: auto
+
+  .btn.current, .btn.inactive
+     display: none

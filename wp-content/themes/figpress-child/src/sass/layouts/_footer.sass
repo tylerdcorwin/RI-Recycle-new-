@@ -1,0 +1,109 @@
+/*********************************************
+ *
+ *        Footer Layout
+ *
+ *********************************************/
+
+.footer-con
+  width: 100%
+  position: relative
+  background: $color1
+  clear: both
+  padding: 35px 0
+  border-top: 5px solid $color3
+
+.footer-top-con
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+
+  .footer-logo-con
+    width: 33%
+
+  .footer-logo
+    display: flex
+    align-items: center
+
+  .footer-logo-img
+    max-width: 200px
+
+  .footer-search-bar
+    position: relative
+    +mobile-up
+      width: 70%
+      margin-top: 25px
+    +tablet-up
+      width: 25%
+      margin-top: 0
+
+    img
+      position: absolute
+      right: 10px
+      top: 10px
+
+    form
+      display: flex
+      align-items: center
+      justify-content: flex-end
+
+  input[type="submit"]
+    display: none
+
+  input[type="text"]
+    margin: auto 0 !important
+    padding: 5px 10px
+    width: 100%
+
+.footer-middle-con
+  .footer-middle-wrapper
+    padding: 30px 0 40px
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+
+    .widget
+      +mobile
+        width: 40%
+      width: 20%
+      margin-right: 30px
+
+    a
+      color: $white
+
+    h6
+      color: $white
+      padding: 10px 0
+      border-bottom: 1px solid $offwhite
+
+.footer-bottom
+  border-top: 1px solid $offwhite
+  padding: 15px 0
+  color: $offwhite
+  display: flex
+  justify-content: space-between
+
+  ul
+    display: flex
+
+    a
+      color: $offwhite
+      margin-left: 16px
+      position: relative
+
+      &:hover
+        color: $white
+
+    li
+      position: relative
+
+      &::after
+        position: absolute
+        content: '|'
+        left: 6px
+        top: 0px
+        color: $offwhite
+
+    li:first-of-type
+      &::after
+        content: ''

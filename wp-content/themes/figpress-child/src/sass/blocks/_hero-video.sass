@@ -1,0 +1,82 @@
+.hero-callout-wrap
+  +background-image
+  width: 100%
+  position: relative
+  margin-bottom: 60px
+
+  &.active
+    overflow: hidden
+
+  .ambient-vid.active
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    overflow: hidden
+
+    video
+      position: absolute
+      right: 0
+      top: 0
+      min-height: 100%
+      width: 100%
+      height: auto
+      object-fit: fill
+      background-size: cover
+      overflow: hidden
+
+  &::after
+    content: ''
+    background: $transparent-gradient
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+
+  .hero-content-con
+    +mobile-up
+      padding: 100px 0
+      width: 90%
+    +tablet-up
+      padding: 200px 0
+      width: 100%
+    +desktop
+      width: 65%
+    margin: 0
+    position: relative
+    z-index: 4
+
+  .hero-title
+    +responsive-type(54px, 72px, 1px)
+    color: $white
+
+  .hero-subtitle
+    +responsive-type(27px, 36px)
+    color: $white
+    margin-bottom: 48px
+
+  .play-video-homepage
+    display: flex
+    align-items: center
+    margin: 0 auto
+    cursor: pointer
+
+    &:hover
+      .play-arrow
+        transform: scale(1.1)
+        pointer-events: none
+
+    p
+      text-transform: uppercase
+      color: $white
+      pointer-events: none
+
+  .play-arrow
+    width: 60px
+    height: 60px
+    background-image: url('../../src/img/play-icon.png')
+    background-size: cover
+    cursor: pointer
+    margin-right: 25px
+    transition: all 0.5s ease

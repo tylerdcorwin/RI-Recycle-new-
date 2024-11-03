@@ -1,0 +1,81 @@
+@mixin buttonMake($color: $color3)
+  @include responsive-type(18px, 22px, 2px)
+  display: inline-block
+  text-decoration: none
+  text-transform: uppercase
+  font-family: $base-font-family
+  font-weight: $bold
+  appearance: none
+  border: 0
+  border-radius: 25px
+  color: #fff
+  background-color: $color
+  user-select: none
+  vertical-align: middle
+  white-space: nowrap
+  padding: 14px 55px
+  cursor: pointer
+  white-space: normal
+  transition: background-color $base-duration $base-timing
+  -webkit-font-smoothing: antialiased
+
+  &:hover,
+  &:focus
+    background-color: mix($color, $black, 90%)
+    color: #fff
+    outline: none
+
+  &:disabled
+    cursor: not-allowed
+    opacity: 0.5
+
+    &:hover
+      background-color: $action-color
+
+
+@mixin textButton($text_color: $color3)
+  @include responsive-type(16px, 26px)
+  appearance: none
+  background: none
+  font-family: $base-font-family
+  position: relative
+  padding-right: 15px
+  text-decoration: underline
+  color: $text_color
+
+  &::after
+    content: '\f105'
+    font-family: FontAwesome
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+    transition: 300ms ease all
+
+  &:hover, &:focus, &:active
+    &::after
+      right: -5px
+
+.fig-btn
+  @include buttonMake($color5)
+
+.fig-trans-btn
+  @include buttonMake(transparent)
+  color: $white
+  border: 2px solid $white
+  border-radius: 0
+
+  &:hover
+    background-color: $white
+    color: $color2
+
+.fig-btn-orange
+  @include buttonMake($color5)
+  +responsive-type(18px, 1.2, 2px)
+
+.wrapper
+  input[type="submit"]
+    @include buttonMake($color3)
+
+.fig-text-btn
+  @include textButton()

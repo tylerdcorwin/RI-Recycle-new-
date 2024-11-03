@@ -1,0 +1,61 @@
+/*********************************************
+ *
+ *        CTA Module
+ *
+ *********************************************/
+
+.call-to-action-wrap
+  width: 100%
+  display: block
+  background: $color2
+
+  .call-to-action
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  .cta-img-con
+    +mobile-up
+      display: none
+    +tablet-up
+      display: block
+    width: 21%
+    position: relative
+
+    img
+      width: 100%
+      object-fit: contain
+      margin-top: -35px
+      position: absolute
+      bottom: 0
+
+  .cta-titles
+    +mobile-up
+      padding: 33px 0px 22px
+      width: 100%
+    +tablet-up
+      width: 58%
+      padding: 33px 10px
+
+    h3
+      +responsive-type(36px, 38px, 0.5px)
+      margin-bottom: 8px
+      color: $white
+
+    p
+      margin-bottom: 0px
+      color: $white
+
+  .btn-con
+    +mobile-up
+      margin-bottom: 50px
+      width: 100%
+    +desktop
+      margin-bottom: 0px
+      width: 17%
+    display: flex
+    align-items: center
+
+  .fig-btn
+    display: flex
+    align-items: center

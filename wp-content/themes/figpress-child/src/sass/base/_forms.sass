@@ -1,0 +1,67 @@
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="search"],
+textarea,
+select
+  font-family: $base-font-family
+  font-size: $base-font-size
+  padding: 8px 16px !important
+  border-radius: 4px
+  border: 1px solid $medium-gray
+  margin: 0px 0px 24px !important
+
+select[multiple='multiple']
+  background-color: $base-background-color
+  border: $base-border
+  border-radius: $base-border-radius
+  box-shadow: $form-box-shadow
+  box-sizing: border-box
+  font-family: $base-font-family
+  font-size: $base-font-size
+  margin-bottom: $small-spacing
+  padding: $base-spacing / 3
+  transition: border-color $base-duration $base-timing
+  width: 100%
+
+  &:hover
+    border-color: mix($base-border-color, $black, 80%)
+
+  &:focus
+    border-color: $action-color
+    box-shadow: $form-box-shadow-focus
+    outline: none
+
+  &:disabled
+    background-color: mix($base-background-color, black, 95%)
+    cursor: not-allowed
+
+    &:hover
+      border: $base-border
+
+.gform_wrapper
+  margin: 0 !important
+
+  input[type="submit"]
+    line-height: 22px !important
+    min-height: none !important
+
+  .gfield_error
+    input
+      margin-bottom: 0 !important
+
+  .gfield:not(.gfield_error)
+    margin: 0 !important
+
+  .gfield_label
+    display: none !important
+
+  textarea
+    height: 205px !important
+
+  .gform_footer
+    padding: 0 !important
+    margin: 0 !important

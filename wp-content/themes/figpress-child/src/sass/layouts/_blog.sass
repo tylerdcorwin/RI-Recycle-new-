@@ -1,0 +1,149 @@
+/*********************************************
+ *
+ *        Blog Layout
+ *
+ *********************************************/
+
+.blog-feed-wrap
+  background-color: $slate
+  padding-top: 50px
+
+.mobile-category
+  margin-bottom: 60px
+
+  .content-con
+    +mobile-up
+      width: 95%
+    +tablet-up
+      width: 70%
+    margin: 0 auto 30px
+    text-align: center
+
+  h3
+    margin-bottom: 10px
+
+  .form-filters
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+  p
+    +mobile-up
+      width: 100%
+      margin-bottom: 10px
+      margin-right: 0
+    +tablet-up
+      width: auto
+      margin: auto 23px auto 0
+    text-align: center
+
+  .category-select
+    justify-content: center
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+  select
+    +mobile-up
+      width: 100%
+    +tablet-up
+      width: 200px
+    +desktop
+      width: 450px
+    margin-bottom: 0 !important
+    height: 40px
+    background: $white
+
+  input
+    +mobile-up
+      margin-left: 40px
+      margin-right: 40px
+    +tablet-up
+      margin-left: 23px
+
+  .selects-arrow
+    +mobile
+      margin-bottom: 0px
+
+  .form-wrapper
+    +mobile
+      width: 100%
+
+.blog-index
+  padding-bottom: 50px
+
+  .posts-con
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 40px
+    margin-top: 45px
+
+  .indiv-blog
+    +mobile-up
+      width: 90%
+    +tablet-up
+      width: 48%
+    +desktop
+      width: 30%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-bottom: 45px
+    border: 1px solid $gray-blue
+    transition: transform 0.25s ease
+
+    &:hover
+      .fig-text-btn
+        &::after
+          right: -5px
+
+    .fig-btn
+      display: inline-block
+      margin-right: auto
+
+  .post-image
+    height: 225px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+
+  .post-details
+    display: flex
+    align-items: flex-start
+    flex: 1
+    flex-direction: column
+    padding: 30px 25px
+    background-color: $white
+
+    h4
+      margin: 0
+
+  .pagination
+    display: flex
+    justify-content: space-between
+
+    .fig-btn.right
+      margin-left: auto
+
+    .btn.current, .btn.inactive
+      display: none
+
+  .btn-con
+    text-align: center
+
+.individual-post-page
+  .indiv-blog
+    +desktop
+      &:nth-child(-n+2)
+          width: 31%
+
+.blog-post
+  margin-bottom: 50px
+
+.post-wrapper
+  +outer-container
+
+.related-posts
+  h3
+    text-align: center

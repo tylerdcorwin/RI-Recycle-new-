@@ -1,0 +1,55 @@
+.lp-hero-form-asset-wrap
+  +background-image
+  width: 100%
+  position: relative
+  padding: 175px 0px 100px
+
+  &::after
+    +position(absolute, 0, 0, 0, 0)
+    content: ''
+    width: 100%
+    height: 100%
+    background-image: $transparent-gradient
+
+  .form-asset-con
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  .content-con
+    +mobile-up
+      width: 100%
+    +tablet-up
+      width: 49%
+    position: relative
+    z-index: 1
+
+  h1, p
+    color: $white
+
+  h1
+    margin-bottom: 20px
+
+  p
+    margin-bottom: 30px
+
+  .form-con
+    input[type="submit"]
+      @extend .fig-btn-orange
+
+  .asset-con
+    +mobile-up
+      display: none
+    +tablet-up
+      display: flex
+      width: 47%
+    box-shadow: 50px 50px 44px 0 rgba(0, 0, 0, 0.2)
+    position: relative
+    z-index: 1
+
+    img
+      object-fit: contain
+      width: 100%
+      height: auto
+      margin-left: auto
+      max-width: 430px

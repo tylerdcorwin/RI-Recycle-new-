@@ -1,0 +1,82 @@
+{
+    "key": "group_5419df65810e7",
+    "title": "Social",
+    "fields": [
+        {
+            "key": "field_541b0c4ba0e00",
+            "label": "Socials",
+            "name": "fig_socials",
+            "type": "repeater",
+            "instructions": "Choose an icon from <a href=\"http:\/\/fontawesome.io\/icons\/\" target=\"_blank\">Font Awesome<\/a> and copy paste the value shown next to the icon in <b>Social Icon<\/b> field. (ex. fa-facebook)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Social",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_541b0e1fa0e02",
+                    "label": "Social Icon",
+                    "name": "fig_social_icon",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "fa-facebook",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_541b0c6da0e01",
+                    "label": "Social URL",
+                    "name": "fig_social_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "http:\/\/"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-contact"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1620919993
+}

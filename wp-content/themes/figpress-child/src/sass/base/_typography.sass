@@ -1,0 +1,75 @@
+body:not(.wp-admin body)
+  color: $base-font-color
+  font-family: $base-font-family
+  font-feature-settings: 'kern', 'liga', 'pnum'
+  font-size: $base-font-size
+  line-height: $base-line-height
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family: $heading-font-family
+  font-size: $base-font-size
+  line-height: $heading-line-height
+  margin: 0 0 $small-spacing
+  color: $color1
+
+h1
+  @include responsive-type(54px, 64px, 1px)
+  font-weight: 700
+
+h2
+  @include responsive-type(46px, 56px, 0)
+  font-weight: 700
+
+h3
+  @include responsive-type(33px, 40px, 0)
+  font-weight: 700
+
+h4
+  @include responsive-type(27px, 33px, 0)
+  font-weight: 600
+
+h5
+  @include responsive-type(18px, 26px, 0)
+  font-weight: 600
+  text-transform: uppercase
+
+h6
+  @include responsive-type(16px, 20px, 0)
+  text-transform: uppercase
+
+p
+  @include responsive-type(18px, 26px, 0)
+  margin-top: 0
+  color: $charcoal
+
+b
+  @include responsive-type(18px, 26px, 0)
+  font-weight: 600
+  color: $color1
+
+a
+  color: $color3
+  text-decoration: none
+  transition: color $base-duration $base-timing
+
+  &:active,
+  &:focus,
+  &:hover
+    color: mix($action-color, $black, 75%)
+
+hr
+  border-bottom: $base-border
+  border-left: 0
+  border-right: 0
+  border-top: 0
+  margin: $base-spacing 0
+
+img,
+picture
+  margin: 0
+  max-width: 100%

@@ -1,0 +1,62 @@
+.lp-hero-overlap-asset-wrap
+  +background-image
+  width: 100%
+  position: relative
+  padding: 175px 0px 35px
+  margin-bottom: 150px
+
+  &::after
+    +position(absolute, 0, 0, 0, 0)
+    content: ''
+    width: 100%
+    height: 100%
+    background-image: $transparent-gradient
+
+  .lp-hero-overlap-asset-con
+    +mobile-up
+      flex-direction: column-reverse
+    +tablet-up
+      flex-direction: row
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  .asset-con
+    +mobile-up
+      display: none
+    +tablet-up
+      display: flex
+      width: 38%
+      margin-bottom: -100px
+    position: relative
+    z-index: 1
+
+    img
+      +mobile-up
+        box-shadow: none
+      +desktop
+        box-shadow: 50px 50px 44px 0 rgba(0, 0, 0, 0.2)
+        margin-left: auto
+      object-fit: contain
+      width: 100%
+      max-width: 430px
+      height: auto
+
+  .content-con
+    +mobile-up
+      width: 100%
+      margin-bottom: 35px
+    +tablet-up
+      width: 49%
+      margin-bottom: 0
+    position: relative
+    z-index: 1
+
+    h1, p
+      color: $white
+
+    h1
+      margin-bottom: 20px
+
+    p
+      margin-bottom: 30px

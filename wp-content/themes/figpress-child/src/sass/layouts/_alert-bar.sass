@@ -1,0 +1,37 @@
+.alert-bar
+  width: 100%
+  text-align: center
+  padding: 10px 0px
+
+  &.no-show
+    display: none
+
+  &.red
+    +alert-bar($red, $white, true)
+
+  &.yellow
+    +alert-bar($yellow, $black)
+
+  &.green
+    +alert-bar($green, $white, true)
+
+  &.white
+    +alert-bar($white, $black)
+
+  .banner-con
+    +boxed-outer-container
+    position: relative
+
+  .banner-btn
+    &:hover
+      text-decoration: underline
+
+  .close-banner
+    +background-image
+    background-image: url('../img/icons/close.svg')
+    position: absolute
+    width: 10px
+    height: 10px
+    top: 8px
+    right: 25px
+    cursor: pointer

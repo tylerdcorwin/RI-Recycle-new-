@@ -1,0 +1,23 @@
+.icon 
+    float: left
+    width: 30px
+    margin: 25px
+    position: relative
+
+    &::before 
+        content: ''
+        width: 25px
+        height: 25px
+        display: block
+        background-size: 25px 25px
+        background-repeat: no-repeat
+        background-position: center
+
+    &.play-button::before
+      background-image: url(../img/icons/play.svg)
+
+    // This is just here as an example, file may not exist yet
+    // &.icon-search::before {
+    //     background-image: url(../img/icons/search.svg)
+    // }
+

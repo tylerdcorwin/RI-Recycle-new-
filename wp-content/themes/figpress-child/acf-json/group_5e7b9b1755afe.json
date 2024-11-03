@@ -1,0 +1,219 @@
+{
+    "key": "group_5e7b9b1755afe",
+    "title": "Alert Banner",
+    "fields": [
+        {
+            "key": "field_5e7bc9377d781",
+            "label": "Banner",
+            "name": "header_banner",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "off": "Off",
+                "on": "On"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5e7b9b20b94bd",
+            "label": "Would you like the banner to be close-able?",
+            "name": "header_banner_close_option",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e7bc9377d781",
+                        "operator": "==",
+                        "value": "on"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "no": "No",
+                "yes": "Yes"
+            },
+            "allow_null": 0,
+            "default_value": "no",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5e7b9c23b94be",
+            "label": "Banner Text",
+            "name": "header_banner_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e7bc9377d781",
+                        "operator": "==",
+                        "value": "on"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e7b9c84b94bf",
+            "label": "Banner Url",
+            "name": "header_banner_url",
+            "type": "url",
+            "instructions": "Use full URL structure like: https:\/\/www.website.com\/",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e7bc9377d781",
+                        "operator": "==",
+                        "value": "on"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https:\/\/www.website.com\/"
+        },
+        {
+            "key": "field_5e7b9cc6b94c0",
+            "label": "Banner Color",
+            "name": "header_banner_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e7bc9377d781",
+                        "operator": "==",
+                        "value": "on"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "red": "Red banner with White text",
+                "yellow": "Yellow banner with Black text",
+                "green": "Green banner with White text",
+                "white": "White banner with Black text",
+                "custom": "Custom"
+            },
+            "default_value": [
+                "red"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e7b9dc6b94c1",
+            "label": "Custom Banner Color",
+            "name": "header_banner_custom_banner_color",
+            "type": "text",
+            "instructions": "Use Hex Color format: #AA0011",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e7b9cc6b94c0",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "#035AFC",
+            "prepend": "",
+            "append": ";",
+            "maxlength": 7
+        },
+        {
+            "key": "field_5e7b9f0ab94c2",
+            "label": "Custom Text Color",
+            "name": "header_banner_custom_text_color",
+            "type": "text",
+            "instructions": "Use Hex Color format: #AA0011",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e7b9cc6b94c0",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "#035AFC",
+            "prepend": "",
+            "append": ";",
+            "maxlength": 7
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-general"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1620919804
+}

@@ -1,0 +1,1090 @@
+[
+    {
+        "key": "group_541b0fdf8bf24",
+        "title": "Contact Information",
+        "fields": [
+            {
+                "key": "field_541b0ffa86c41",
+                "label": "Contact",
+                "name": "fig_contact",
+                "prefix": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "min": "",
+                "max": "",
+                "layout": "table",
+                "button_label": "Add a New Location",
+                "sub_fields": [
+                    {
+                        "key": "field_541b104886c43",
+                        "label": "Location Name",
+                        "name": "fig_location_name",
+                        "prefix": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "column_width": 20,
+                        "default_value": "",
+                        "placeholder": "Headquarter",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_541b106b86c44",
+                        "label": "Location Information",
+                        "name": "fig_location_information",
+                        "prefix": "",
+                        "type": "flexible_content",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "column_width": 80,
+                        "button_label": "Add Location Information",
+                        "min": "",
+                        "max": "",
+                        "layouts": [
+                            {
+                                "key": "541b107b02243",
+                                "name": "fig_location_phone",
+                                "label": "Phone Numebr",
+                                "display": "row",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_541b10a786c45",
+                                        "label": "Phone",
+                                        "name": "fig_phone",
+                                        "prefix": "",
+                                        "type": "number",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "column_width": "",
+                                        "default_value": "",
+                                        "placeholder": 4011231234,
+                                        "prepend": "",
+                                        "append": "",
+                                        "min": "",
+                                        "max": "",
+                                        "step": "",
+                                        "readonly": 0,
+                                        "disabled": 0
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            },
+                            {
+                                "key": "541b10d986c46",
+                                "name": "fig_location_fax",
+                                "label": "Fax Number",
+                                "display": "row",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_541b10e586c47",
+                                        "label": "Fax Number",
+                                        "name": "fig_fax",
+                                        "prefix": "",
+                                        "type": "number",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "column_width": "",
+                                        "default_value": "",
+                                        "placeholder": 4011231234,
+                                        "prepend": "",
+                                        "append": "",
+                                        "min": "",
+                                        "max": "",
+                                        "step": "",
+                                        "readonly": 0,
+                                        "disabled": 0
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            },
+                            {
+                                "key": "541b127970b4e",
+                                "name": "fig_location_email",
+                                "label": "Email",
+                                "display": "row",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_541b128370b4f",
+                                        "label": "Email",
+                                        "name": "fig_email",
+                                        "prefix": "",
+                                        "type": "email",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "column_width": "",
+                                        "default_value": "",
+                                        "placeholder": "email@example.com",
+                                        "prepend": "",
+                                        "append": ""
+                                    }
+                                ],
+                                "min": "",
+                                "max": ""
+                            },
+                            {
+                                "key": "541b11cdff5c2",
+                                "name": "fig_location_address",
+                                "label": "Address",
+                                "display": "table",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_541b11dcff5c3",
+                                        "label": "Address",
+                                        "name": "fig_address",
+                                        "prefix": "",
+                                        "type": "google_map",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "column_width": "",
+                                        "center_lat": "",
+                                        "center_lng": "",
+                                        "zoom": "",
+                                        "height": ""
+                                    }
+                                ],
+                                "min": "",
+                                "max": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-contact"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_5419e06175406",
+        "title": "General Settings",
+        "fields": [
+            {
+                "key": "field_5419e06bcc04d",
+                "label": "Logo",
+                "name": "fig_logo",
+                "prefix": "",
+                "type": "image",
+                "instructions": "Upload image for logo.",
+                "required": 0,
+                "conditional_logic": 0,
+                "return_format": "id",
+                "preview_size": "full",
+                "library": "all"
+            },
+            {
+                "key": "field_5419e09bcc04e",
+                "label": "Retina Logo",
+                "name": "fig_retina_logo",
+                "prefix": "",
+                "type": "image",
+                "instructions": "Upload retina image for logo.",
+                "required": 0,
+                "conditional_logic": 0,
+                "return_format": "id",
+                "preview_size": "full",
+                "library": "all"
+            },
+            {
+                "key": "field_5419e131cc04f",
+                "label": "Favicon",
+                "name": "fig_favicon",
+                "prefix": "",
+                "type": "image",
+                "instructions": "Upload favicon in PNG or JPG format. Recommended size 32px * 32px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all"
+            },
+            {
+                "key": "field_5419e2a8d3d1e",
+                "label": "Tracking Code",
+                "name": "fig_analytics",
+                "prefix": "",
+                "type": "textarea",
+                "instructions": "Paste your <a href=\"https:\/\/www.google.com\/analytics\/web\/?hl=en\" target=\"_blank\">Google Analytics<\/a> (or other) tracking code here. This will be added into the footer template of your theme.",
+                "required": 0,
+                "conditional_logic": 0,
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-general"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "left",
+        "instruction_placement": "field",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_5419df65810e7",
+        "title": "Social",
+        "fields": [
+            {
+                "key": "field_541b0c4ba0e00",
+                "label": "Socials",
+                "name": "fig_socials",
+                "prefix": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "min": "",
+                "max": "",
+                "layout": "table",
+                "button_label": "Add Social",
+                "sub_fields": [
+                    {
+                        "key": "field_541b0e1fa0e02",
+                        "label": "Social Icon",
+                        "name": "fig_social_icon",
+                        "prefix": "",
+                        "type": "text",
+                        "instructions": "Choose an icon from <a href=\"http:\/\/fontawesome.io\/icons\/\" target=\"_blank\">Font Awesome<\/a> and copy paste the value shown next to the icon. (ex. fa-facebook)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "column_width": "",
+                        "default_value": "",
+                        "placeholder": "fa-facebook",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_541b0c6da0e01",
+                        "label": "Social URL",
+                        "name": "fig_social_url",
+                        "prefix": "",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "column_width": "",
+                        "default_value": "",
+                        "placeholder": "http:\/\/"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-contact"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_5419e3faf1616",
+        "title": "Typography - Embed Code",
+        "fields": [
+            {
+                "key": "field_5419e99e1d489",
+                "label": "Embed Code",
+                "name": "fig_embed_code",
+                "prefix": "",
+                "type": "textarea",
+                "instructions": "Paste the embed code here if you are using external resources. This will be added into the <b>head<\/b> tag. <br>Quick links: <a href=\"https:\/\/typekit.com\/fonts\" target=\"_blank\">Typekit<\/a>, <a href=\"http:\/\/www.typography.com\/\" target=\"_blank\">Typography.com<\/a>, <a href=\"https:\/\/www.google.com\/fonts\" target=\"_blank\">Google Web Fonts<\/a>",
+                "required": 0,
+                "conditional_logic": 0,
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 4,
+                "new_lines": "",
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-typography"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    },
+    {
+        "key": "group_5419eccd2892e",
+        "title": "Typography - Font Family",
+        "fields": [
+            {
+                "key": "field_541afb9f700b0",
+                "label": "Font Family",
+                "name": "fig_font_family",
+                "prefix": "",
+                "type": "flexible_content",
+                "instructions": "Font family name may change depending on your font resources.",
+                "required": 0,
+                "conditional_logic": 0,
+                "button_label": "Add Font Family Styling",
+                "min": "",
+                "max": "",
+                "layouts": [
+                    {
+                        "key": "541afba414e26",
+                        "name": "fig_body",
+                        "label": "Body Text",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_541afbce700b1",
+                                "label": "Body Font Family Name",
+                                "name": "fig_body_font_family_name",
+                                "prefix": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 30,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541afc07700b2",
+                                "label": "Body Font Family Fallback",
+                                "name": "fig_body_font_fallback",
+                                "prefix": "",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 20,
+                                "choices": {
+                                    "sans-serif": "sans-serif",
+                                    "serif": "serif",
+                                    "mono": "mono"
+                                },
+                                "default_value": {
+                                    "serif": "serif"
+                                },
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_541afc38700b3",
+                                "label": "Body Font Size",
+                                "name": "fig_body_font_size",
+                                "prefix": "",
+                                "type": "number",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 10,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": "",
+                                "max": "",
+                                "step": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541afc73700b4",
+                                "label": "Body Font Color",
+                                "name": "fig_body_font_color",
+                                "prefix": "",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 40,
+                                "default_value": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": 1
+                    },
+                    {
+                        "key": "541b1d4bb9111",
+                        "name": "fig_primary_menu_font",
+                        "label": "Primary Menu",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_541b1d4bb9112",
+                                "label": "Menu Font Family Name",
+                                "name": "fig_primary_menu_font_family_name",
+                                "prefix": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 30,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541b1d4bb9113",
+                                "label": "Menu Font Family Fallback",
+                                "name": "fig_primary_menu_font_fallback",
+                                "prefix": "",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 20,
+                                "choices": {
+                                    "sans-serif": "sans-serif",
+                                    "serif": "serif",
+                                    "mono": "mono"
+                                },
+                                "default_value": {
+                                    "serif": "serif"
+                                },
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_541b1d4bb9114",
+                                "label": "Menu Font Size",
+                                "name": "fig_primary_menu_font_size",
+                                "prefix": "",
+                                "type": "number",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 10,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": "",
+                                "max": "",
+                                "step": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541b1d4bb9115",
+                                "label": "Menu Font Color",
+                                "name": "fig_primary_menu_font_color",
+                                "prefix": "",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 40,
+                                "default_value": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": 1
+                    },
+                    {
+                        "key": "541b18bb6bc89",
+                        "name": "fig_heading_1",
+                        "label": "Heading 1",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_541b18bb6bc8a",
+                                "label": "H1 Font Family Name",
+                                "name": "fig_h1_font_family_name",
+                                "prefix": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 30,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541b18bb6bc8b",
+                                "label": "H1 Font Family Fallback",
+                                "name": "fig_h1_font_fallback",
+                                "prefix": "",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 20,
+                                "choices": {
+                                    "sans-serif": "sans-serif",
+                                    "serif": "serif",
+                                    "mono": "mono"
+                                },
+                                "default_value": {
+                                    "serif": "serif"
+                                },
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_541b18bb6bc8c",
+                                "label": "H1 Font Size",
+                                "name": "fig_h1_font_size",
+                                "prefix": "",
+                                "type": "number",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 10,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": "",
+                                "max": "",
+                                "step": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541b18bb6bc8d",
+                                "label": "H1 Font Color",
+                                "name": "fig_h1_font_color",
+                                "prefix": "",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 40,
+                                "default_value": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": 1
+                    },
+                    {
+                        "key": "541afcebe92f4",
+                        "name": "fig_heading_2",
+                        "label": "Heading 2",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_541afcebe92f5",
+                                "label": "H2 Font Family Name",
+                                "name": "fig_h2_font_family_name",
+                                "prefix": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 30,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541afcebe92f6",
+                                "label": "H2 Font Family Fallback",
+                                "name": "fig_h2_font_fallback",
+                                "prefix": "",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 20,
+                                "choices": {
+                                    "sans-serif": "sans-serif",
+                                    "serif": "serif",
+                                    "mono": "mono"
+                                },
+                                "default_value": {
+                                    "serif": "serif"
+                                },
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_541afcebe92f7",
+                                "label": "H2 Font Size",
+                                "name": "fig_h2_font_size",
+                                "prefix": "",
+                                "type": "number",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 10,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": "",
+                                "max": "",
+                                "step": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541afcebe92f8",
+                                "label": "H2 Font Color",
+                                "name": "fig_h2_font_color",
+                                "prefix": "",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 40,
+                                "default_value": "#000000"
+                            }
+                        ],
+                        "min": "",
+                        "max": 1
+                    },
+                    {
+                        "key": "541b1412abc72",
+                        "name": "fig_heading_3",
+                        "label": "Heading 3",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_541b1412abc73",
+                                "label": "H3 Font Family Name",
+                                "name": "fig_h3_font_family_name",
+                                "prefix": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 30,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541b1412abc74",
+                                "label": "H3 Font Family Fallback",
+                                "name": "fig_h3_font_fallback",
+                                "prefix": "",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 20,
+                                "choices": {
+                                    "sans-serif": "sans-serif",
+                                    "serif": "serif",
+                                    "mono": "mono"
+                                },
+                                "default_value": {
+                                    "serif": "serif"
+                                },
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_541b1412abc75",
+                                "label": "H3 Font Size",
+                                "name": "fig_h3_font_size",
+                                "prefix": "",
+                                "type": "number",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 10,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": "",
+                                "max": "",
+                                "step": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541b1412abc76",
+                                "label": "H3 Font Color",
+                                "name": "fig_h3_font_color",
+                                "prefix": "",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 40,
+                                "default_value": "#000000"
+                            }
+                        ],
+                        "min": "",
+                        "max": 1
+                    },
+                    {
+                        "key": "541b1443abc77",
+                        "name": "fig_heading_4",
+                        "label": "Heading 4",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_541b1443abc78",
+                                "label": "H4 Font Family Name",
+                                "name": "fig_h4_font_family_name",
+                                "prefix": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 30,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541b1443abc79",
+                                "label": "H4 Font Family Fallback",
+                                "name": "fig_h4_font_fallback",
+                                "prefix": "",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 20,
+                                "choices": {
+                                    "sans-serif": "sans-serif",
+                                    "serif": "serif",
+                                    "mono": "mono"
+                                },
+                                "default_value": {
+                                    "serif": "serif"
+                                },
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_541b1443abc7a",
+                                "label": "H4 Font Size",
+                                "name": "fig_h4_font_size",
+                                "prefix": "",
+                                "type": "number",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 10,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": "",
+                                "max": "",
+                                "step": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541b1443abc7b",
+                                "label": "H4 Font Color",
+                                "name": "fig_h4_font_color",
+                                "prefix": "",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 40,
+                                "default_value": "#000000"
+                            }
+                        ],
+                        "min": "",
+                        "max": 1
+                    },
+                    {
+                        "key": "541b1460abc7c",
+                        "name": "fig_heading_5",
+                        "label": "Heading 5",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_541b1460abc7d",
+                                "label": "H5 Font Family Name",
+                                "name": "fig_h5_font_family_name",
+                                "prefix": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 30,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541b1460abc7e",
+                                "label": "H5 Font Family Fallback",
+                                "name": "fig_h5_font_fallback",
+                                "prefix": "",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 20,
+                                "choices": {
+                                    "sans-serif": "sans-serif",
+                                    "serif": "serif",
+                                    "mono": "mono"
+                                },
+                                "default_value": {
+                                    "serif": "serif"
+                                },
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_541b1460abc7f",
+                                "label": "H5 Font Size",
+                                "name": "fig_h5_font_size",
+                                "prefix": "",
+                                "type": "number",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 10,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": "",
+                                "max": "",
+                                "step": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541b1460abc80",
+                                "label": "H5 Font Color",
+                                "name": "fig_h5_font_color",
+                                "prefix": "",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 40,
+                                "default_value": "#000000"
+                            }
+                        ],
+                        "min": "",
+                        "max": 1
+                    },
+                    {
+                        "key": "541b147babc81",
+                        "name": "fig_heading_6",
+                        "label": "Heading 6",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_541b147babc82",
+                                "label": "H6 Font Family Name",
+                                "name": "fig_h6_font_family_name",
+                                "prefix": "",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 30,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541b147babc83",
+                                "label": "H6 Font Family Fallback",
+                                "name": "fig_h6_font_fallback",
+                                "prefix": "",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 20,
+                                "choices": {
+                                    "sans-serif": "sans-serif",
+                                    "serif": "serif",
+                                    "mono": "mono"
+                                },
+                                "default_value": {
+                                    "serif": "serif"
+                                },
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_541b147babc84",
+                                "label": "H6 Font Size",
+                                "name": "fig_h6_font_size",
+                                "prefix": "",
+                                "type": "number",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 10,
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": "",
+                                "max": "",
+                                "step": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_541b147babc85",
+                                "label": "H6 Font Color",
+                                "name": "fig_h6_font_color",
+                                "prefix": "",
+                                "type": "color_picker",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "column_width": 40,
+                                "default_value": "#000000"
+                            }
+                        ],
+                        "min": "",
+                        "max": 1
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-typography"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": ""
+    }
+]

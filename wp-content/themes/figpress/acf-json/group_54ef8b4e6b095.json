@@ -1,0 +1,66 @@
+{
+    "key": "group_54ef8b4e6b095",
+    "title": "Custom CSS & JS",
+    "fields": [
+        {
+            "key": "field_54ef8b566bf2a",
+            "label": "Custom CSS",
+            "name": "fig_custom_css",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ".class { color: pink; }",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54ef8bea6bf2b",
+            "label": "Custom JS",
+            "name": "fig_custom_js",
+            "type": "textarea",
+            "instructions": "To use jQuery code wrap it into (function($) { ... })(jQuery);",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "(function($) { ... })(jQuery);",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-custom-css-js"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1531833861
+}

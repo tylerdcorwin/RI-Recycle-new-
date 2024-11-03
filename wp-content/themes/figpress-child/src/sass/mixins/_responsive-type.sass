@@ -1,0 +1,27 @@
+/*********************************************
+ *
+ *        Responsive Typography
+ *
+ *********************************************/
+
+$min-font: 16px
+$min-line: $min-font * 1.5
+$base-xs: 0.8125
+$base-md: 0.875
+$base-lg: 1
+
+=responsive-type($font-size, $line-height: 1.2, $letter-spacing: 0)
+    @include mobile-up
+        font-size: max($min-font, $font-size * $base-xs)
+        line-height: max($min-line, $line-height * $base-xs)
+        letter-spacing: $letter-spacing * $base-xs
+
+    @include tablet-up
+        font-size: max($min-font, $font-size * $base-md)
+        line-height: max($min-line, $line-height * $base-md)
+        letter-spacing: $letter-spacing * $base-md
+
+    @include desktop
+        font-size: max($min-font, $font-size * $base-lg)
+        line-height: max($min-line, $line-height * $base-lg)
+        letter-spacing: $letter-spacing * $base-lg

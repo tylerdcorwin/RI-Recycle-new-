@@ -1,0 +1,43 @@
+/*********************************************
+ *
+ *        Outer Container w/ Clearfix
+ *
+ *********************************************/
+
+@mixin clearfix()
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+@mixin outer-container($container-size: 100%)
+  @content
+  +clearfix
+  max-width: $container-size
+  margin-left: auto
+  margin-right: auto
+  box-sizing: border-box
+
+@mixin boxed-outer-container()
+  +mobile-up
+    +outer-container(82em) 
+      padding-left: 1em
+      padding-right: 1em
+
+  +tablet-up
+    +outer-container(84em)
+      padding-left: 2em
+      padding-right: 2em
+
+  +desktop
+    +outer-container(86em)
+      padding-left: 3em
+      padding-right: 3em
+
+@mixin inner-container
+  +mobile-up
+    width: 85%
+  +tablet-up
+    width: 75%
+  +desktop
+    width: 70%

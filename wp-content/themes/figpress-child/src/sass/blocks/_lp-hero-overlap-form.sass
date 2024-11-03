@@ -1,0 +1,52 @@
+.lp-hero-overlap-form-wrap
+  +background-image
+  position: relative
+  width: 100%
+  padding: 185px 0px 20px
+  margin-bottom: 150px
+
+  &::after
+    +position(absolute, 0, 0, 0, 0)
+    content: ''
+    width: 100%
+    height: 100%
+    background-image: $transparent-gradient
+
+  .hero-overlap-form-con
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  .content-con
+    +mobile-up
+      width: 100%
+      margin-bottom: 35px
+    +tablet-up
+      width: 49%
+    position: relative
+    z-index: 1
+
+  h1, p
+    color: $white
+    margin-bottom: 20px
+
+  .form-con
+    +mobile-up
+      width: 100%
+    +tablet-up
+      width: 37%
+    padding: 35px 40px 45px
+    background-color: $light-gray
+    border-radius: 16px
+    margin-bottom: -100px
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.3)
+    position: relative
+    z-index: 1
+
+    h3
+      color: $color1
+      margin-bottom: 10px
+      text-align: center
+
+    input[type="submit"]
+      @extend .fig-btn-orange

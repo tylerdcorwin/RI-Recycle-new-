@@ -1,0 +1,68 @@
+.text-testimonial-wrap
+  width: 100%
+  position: relative
+  margin-bottom: 100px
+
+  .text-testimonial-con
+    display: flex
+    flex-wrap: wrap
+
+  .indiv-text-testimonial
+    margin-bottom: 25px
+
+    &.col-1
+      width: 100%
+
+    &.col-2
+      +mobile-up
+        width: 100%
+      +tablet-up
+        width: 45%
+      margin-left: 2.5%
+      margin-right: 2.5%
+
+    &.col-3
+      +mobile-up
+        width: 100%
+      +tablet-up
+        width: 45%
+        margin-left: 2.5%
+        margin-right: 2.5%
+      +desktop
+        width: 30%
+        margin-left: 1.5%
+        margin-right: 1.5%
+
+  img
+    border-radius: 100%
+    width: 85px
+    height: 85px
+    object-fit: contain
+
+  .img-up
+    margin-bottom: 30px
+
+  .quote-marks
+    +background-image
+    background-size: contain
+    width: 45px
+    height: 34px
+    background-image: url('../img/icons/quote-marks.svg')
+    margin-bottom: 30px
+
+  p
+    margin-bottom: 30px
+
+  .author-con
+    +mobile-up
+      margin-bottom: 30px
+    +desktop
+      margin-bottom: 0
+    display: flex
+    align-items: center
+
+    img
+      margin-right: 20px
+
+    h5
+      margin-bottom: 0

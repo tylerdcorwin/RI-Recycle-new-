@@ -1,0 +1,99 @@
+.slider-wrap
+  width: 100%
+  position: relative
+  overflow: hidden
+  margin-bottom: 45px
+  margin-top: 45px
+
+  .slider-title
+    +mobile-up
+      margin-bottom: 45px
+    +tablet-up
+      margin-bottom: 55px
+    +desktop
+      margin-bottom: 65px
+    text-align: center
+
+  .slider-nav-container
+    height: 42px
+    position: relative
+    overflow: hidden
+    margin-bottom: 45px
+
+    &:focus
+      outline: none
+
+    .flickity-prev-next-button
+      appearance: none
+      width: 45px
+      height: 45px
+      position: absolute
+      bottom: -3px
+      border-radius: 5px
+      border: none
+      cursor: pointer
+
+      &.next
+        right: 0px
+
+      &.previous
+        left: 0px
+
+      &:focus
+        outline: none
+
+  .slide-title
+    +mobile-up
+      width: 45%
+    +tablet-up
+      width: 32%
+    +desktop
+      width: 26%
+    display: flex
+    justify-content: center
+    text-align: center
+    position: relative
+    cursor: pointer
+    top: 5px
+
+    &.is-nav-selected
+      &::after
+        content: ''
+        position: absolute
+        bottom: -10px
+        left: 50%
+        transform: translateX(-50%)
+        height: 3px
+        width: 75px
+        background-color: $color4
+
+  .indiv-slide
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: center
+    padding: 20px 25px
+
+    .slide-content
+      width: 50%
+
+    .slide-image
+      width: 45%
+
+    .slide-img
+      width: 100%
+      height: auto
+      object-fit: contain
+      box-shadow: -10px 12px 14px rgba(0,0,0,0.2)
+
+  .slider-container
+    margin-bottom: 45px
+
+    &:focus
+      outline: none
+
+    .flickity-prev-next-button
+      display: none
+
+    .flickity-viewport
+      max-height: 450px

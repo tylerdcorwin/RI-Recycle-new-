@@ -1,0 +1,27 @@
+.small-hero-wrap
+  +background-image
+  width: 100%
+  position: relative
+  padding: 210px 0px 48px
+  margin-bottom: 75px
+
+  &::after
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-image: $transparent-gradient
+
+  h1
+    color: $white
+    position: relative
+    margin-bottom: 0
+    z-index: 1
+
+  .blog-info
+    color: $white
+    position: relative
+    margin: 20px 0px 0px
+    z-index: 1

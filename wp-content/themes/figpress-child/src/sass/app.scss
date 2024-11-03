@@ -1,0 +1,61 @@
+/*********************************************
+ *
+ *        Main Figpress Styles
+ *
+ *********************************************/
+
+@import 'base/grid-settings';
+@import 'base/base';
+
+// import flickity
+@import '../../../../../node_modules/flickity/dist/flickity.min.css';
+
+// Mixins
+@import 'mixins/outer-container';
+@import 'mixins/responsive-type';
+@import 'mixins/position';
+@import 'mixins/image';
+@import 'mixins/size';
+@import 'mixins/alert-bar';
+@import 'mixins/list-styles';
+
+// Components
+@import 'components/responsive-video';
+
+// Blocks
+@import 'blocks/hero-video';
+@import 'blocks/small-hero';
+@import 'blocks/wysiwyg';
+@import 'blocks/small-overview';
+@import 'blocks/content-with-image';
+@import 'blocks/testimonials';
+@import 'blocks/icon-nav';
+@import 'blocks/icon-grid';
+@import 'blocks/leadership';
+@import 'blocks/accordion';
+@import 'blocks/statistics';
+@import 'blocks/map';
+@import 'blocks/slider';
+@import 'blocks/wysiwyg-form';
+@import 'blocks/email-signup';
+@import 'blocks/full-width-image';
+@import 'blocks/cta';
+@import 'blocks/testimonial';
+@import 'blocks/lp-hero-form-asset';
+@import 'blocks/lp-hero-overlap-form';
+@import 'blocks/lp-hero-overlap-asset';
+@import 'blocks/lp-hero-inline-video';
+
+
+// Layouts
+@import 'layouts/global';
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/alert-bar';
+@import 'layouts/section';
+@import 'layouts/modal';
+@import 'layouts/blog';
+@import 'layouts/404';
+@import 'layouts/search';
+@import 'layouts/pagination';
+@import 'layouts/resources';

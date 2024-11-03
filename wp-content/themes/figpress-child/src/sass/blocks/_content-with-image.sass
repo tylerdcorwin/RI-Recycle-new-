@@ -1,0 +1,38 @@
+.content-with-image-wrap
+  +list-styles
+  width: 100%
+  position: relative
+  padding: 70px 0px
+
+  &.gray-bg
+    background: $off-gray
+
+.content-with-image
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+  &.right
+    flex-direction: row-reverse
+
+  .content-area
+    +mobile-up
+      width: 100%
+    +tablet-up
+      width: 47%
+
+  .image-area
+    +mobile-up
+      display: none
+    +tablet-up
+      width: 44%
+      display: block
+
+  img
+    width: 100%
+    height: auto
+    object-fit: contain
+    box-shadow: -10px 12px 14px rgba(0,0,0,0.2)
+
+  .btn-con
+    margin-top: 30px

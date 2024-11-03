@@ -1,0 +1,27 @@
+$micro-screen: 0px
+$medium-screen: 768px
+$large-screen: 1280px
+
+@mixin mobile-up
+  @media (min-width: $micro-screen)
+    @content
+
+@mixin mobile
+  @media (min-width: $micro-screen) and (max-width: $medium-screen)
+    @content
+
+@mixin tablet-up
+  @media (min-width: $medium-screen)
+    @content
+
+@mixin tablet
+  @media (min-width: $medium-screen) and (max-width: $large-screen)
+    @content
+
+@mixin desktop
+  @media (min-width: $large-screen)
+    @content
+
+@mixin desktop-down
+  @media (max-width: $large-screen)
+    @content

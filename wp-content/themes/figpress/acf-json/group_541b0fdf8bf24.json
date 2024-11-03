@@ -1,0 +1,207 @@
+{
+    "key": "group_541b0fdf8bf24",
+    "title": "Contact Information",
+    "fields": [
+        {
+            "key": "field_541b0ffa86c41",
+            "label": "Contact",
+            "name": "fig_contact",
+            "type": "repeater",
+            "instructions": "You may add multiple phone numbers, fax numbers, and email address.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add a New Location",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_541b104886c43",
+                    "label": "Location Name",
+                    "name": "fig_location_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 20,
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Headquarter",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_541b106b86c44",
+                    "label": "Location Information",
+                    "name": "fig_location_information",
+                    "type": "flexible_content",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 80,
+                        "class": "",
+                        "id": ""
+                    },
+                    "button_label": "Add Location Information",
+                    "min": "",
+                    "max": "",
+                    "layouts": [
+                        {
+                            "key": "541b107b02243",
+                            "name": "fig_location_phone",
+                            "label": "Phone Number",
+                            "display": "row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_541b10a786c45",
+                                    "label": "Phone",
+                                    "name": "fig_phone",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": 4011231234,
+                                    "prepend": "",
+                                    "append": "",
+                                    "min": "",
+                                    "max": "",
+                                    "step": "",
+                                    "readonly": 0,
+                                    "disabled": 0
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        {
+                            "key": "541b10d986c46",
+                            "name": "fig_location_fax",
+                            "label": "Fax Number",
+                            "display": "row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_541b10e586c47",
+                                    "label": "Fax Number",
+                                    "name": "fig_fax",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": 4011231234,
+                                    "prepend": "",
+                                    "append": "",
+                                    "min": "",
+                                    "max": "",
+                                    "step": "",
+                                    "readonly": 0,
+                                    "disabled": 0
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        {
+                            "key": "541b127970b4e",
+                            "name": "fig_location_email",
+                            "label": "Email",
+                            "display": "row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_541b128370b4f",
+                                    "label": "Email",
+                                    "name": "fig_email",
+                                    "type": "email",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "email@example.com",
+                                    "prepend": "",
+                                    "append": ""
+                                }
+                            ],
+                            "min": "",
+                            "max": ""
+                        },
+                        {
+                            "key": "541b11cdff5c2",
+                            "name": "fig_location_address",
+                            "label": "Address",
+                            "display": "table",
+                            "sub_fields": [
+                                {
+                                    "key": "field_541b11dcff5c3",
+                                    "label": "Address",
+                                    "name": "fig_address",
+                                    "type": "google_map",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "center_lat": "",
+                                    "center_lng": "",
+                                    "zoom": "",
+                                    "height": 200
+                                }
+                            ],
+                            "min": "",
+                            "max": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-contact"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1531833852
+}

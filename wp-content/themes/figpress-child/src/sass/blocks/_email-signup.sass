@@ -1,0 +1,39 @@
+.email-signup-wrap
+  width: 100%
+  position: relative
+  padding: 45px 0px 65px 
+  background-color: $slate
+
+  .email-signup-con
+    +mobile-up
+      width: 90%
+    +tablet-up
+      width: 56%
+    margin: 0 auto
+    text-align: center
+
+  h3
+    margin-bottom: 20px
+
+  p
+    margin-bottom: 40px
+
+  form
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+
+  .gform_wrapper .gform_body
+    width: 56%
+
+  .gform_footer.top_label
+    padding: 0
+    width: auto
+
+  input[type="email"]
+    width: 100% !important
+    margin-bottom: 0 !important
+
+  input[type="submit"]
+    +buttonMake($color3)

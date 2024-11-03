@@ -1,0 +1,9 @@
+@mixin alert-bar($bg_color, $txt_color, $img_white: false)
+  background-color: $bg_color
+
+  .banner-btn
+    color: $txt_color
+
+  @if $img_white
+    .close-banner
+      background-image: url('../img/icons/close-white.svg')

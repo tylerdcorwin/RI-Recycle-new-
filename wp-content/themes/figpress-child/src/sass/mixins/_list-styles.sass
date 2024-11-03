@@ -1,0 +1,38 @@
+@mixin list-styles
+  ul
+    margin: 15px 15px 25px
+
+    li:not(.gfield)
+      +responsive-type(18px, 27px)
+      margin-bottom: 5px
+      color: $charcoal
+      font-weight: $regular
+      font-family: $base-font-family
+
+      &::before
+        // content: "•"
+        content: "●"
+        color: $color3
+        display: inline-block
+        width: 1em
+        margin-left: -1em
+
+  ol
+    margin: 15px 15px 25px
+    counter-reset: li
+
+    li:not(.gfield)
+      +responsive-type(18px, 27px)
+      font-weight: $regular
+      color: $charcoal
+      counter-increment: li
+      margin: 0 0 5px 15px
+
+      &::before
+        content: counter(li)
+        color: $color3
+        display: inline-block
+        width: 3em
+        text-align: center
+        margin-left: -3em
+        direction: rtl

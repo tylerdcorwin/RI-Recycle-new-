@@ -1,0 +1,31 @@
+/*********************************************
+ *
+ *        WYSIWYG Module
+ *
+ *********************************************/
+
+.wysiwyg-content-wrap
+  display: block
+  width: 100%
+  padding: 45px 0px 59px
+
+.wysiwyg-content-area
+  +inner-container
+  margin-left: auto
+  margin-right: auto
+
+  // img
+  //   width: auto
+
+  &.two-column-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    .left-column, .right-column
+      width: 48%
+
+    img
+      object-fit: contain
+      width: 100%
+      height: auto

@@ -1,0 +1,55 @@
+/*********************************************
+ *
+ *        Icon Nav Module
+ *
+ *********************************************/
+
+.icon-nav-wrap
+  padding: 0 0 52px
+
+  .inner-container
+    +mobile-up
+      width: 85%
+    +tablet-up
+      width: 75%
+    +desktop
+      width: 65%
+    margin: 0 auto 60px
+    text-align: center
+
+    h5
+      text-transform: uppercase
+      margin-bottom: 10px
+
+  .icon-nav-con
+    display: flex
+    flex-wrap: wrap
+
+  .indiv-icon-nav
+    +mobile-up
+      width: 47%
+    +desktop
+      width: 30%
+    margin: 0 1.5% 60px
+
+    &.centered
+      text-align: center
+
+      img
+        margin-left: auto
+        margin-right: auto
+
+  .icon-con
+    display: flex
+    margin-bottom: 10px
+
+    img
+      width: 83px
+      height: auto
+      object-fit: contain
+
+  h4, p
+    margin-bottom: 10px
+
+  .btn-con
+    text-align: center

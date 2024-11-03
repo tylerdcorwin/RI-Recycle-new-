@@ -1,0 +1,49 @@
+/*********************************************
+ *
+ *        Section Layout
+ *
+ *********************************************/
+
+// Content with Sidebar Layout
+section
+
+  &.has-sidebar,
+  &.has-right-sidebar
+    // +row()
+    aside
+      +tablet-up
+        // +span-columns(2)
+      +desktop
+        // +span-columns(3)
+
+    > article,
+    .content-feed
+      +tablet-up
+        // +span-columns(4)
+      +desktop
+        // +span-columns(9)
+
+  // Article
+  article
+    background-color: rgba(0,0,0,0.125)
+    padding: 15px 30px
+    margin-top: 15px
+    margin-bottom: 15px
+
+
+// Left Sidebar, read from right to left
+section.has-left-sidebar
+  // +direction-context(right-to-left)
+  // +row(block, rtl)
+  aside
+    +tablet-up
+      // +span-columns(2)
+    +desktop
+      // +span-columns(3)
+
+  > article,
+  .content-feed
+    +tablet-up
+      // +span-columns(4)
+    +desktop
+      // +span-columns(9)
