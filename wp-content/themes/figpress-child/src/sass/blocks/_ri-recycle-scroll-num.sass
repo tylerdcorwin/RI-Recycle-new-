@@ -1,0 +1,59 @@
+.ri-recycle-scrolling-numbers-block
+  width: 100%
+  position: relative
+  margin: 48px 0px
+
+  .scrolling-numbers-block-con
+    +mobile-up
+      width: 100%
+    +tablet-up
+      width: 80%
+      margin: auto
+
+  h3
+    +mobile-up
+      text-align: left
+      margin-bottom: 18px
+    +tablet-up
+      text-align: center
+      margin-bottom: 38px
+    font-weight: $medium
+
+  .scrolling-number-con
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 32px
+    row-gap: 20px
+
+    .number-con
+      +mobile-up
+        width: 100%
+      +tablet-up
+        width: 25%
+
+    .scroll-number
+      font-family: $numbers-font-family
+      font-size: 48px
+      font-weight: 200
+      letter-spacing: 1px
+      color: $logo_green
+      display: inline-block
+      transform-origin: bottom
+      transition: transform 0.3s ease
+
+    p
+      +responsive-type(24px, 26px, 0px)
+      +mobile-up
+        width: 100%
+      +tablet-up
+        width: 70%
+      color: $recycle_black
+      margin-bottom: 0
+
+  h4
+    +mobile-up
+      text-align: left
+    +tablet-up
+      text-align: center

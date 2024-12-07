@@ -312,5 +312,41 @@ $acf_block_array = 	array(
 		'icon' => 'format-image',
 		'keywords' => array('Landing Page form', 'form', 'landing page full width form')
 	),
+	array(
+		'name' => 'ri-recycle-hero',
+		'title' => __('RI Recyling Hero'),
+		'description' => __('A Custom Homepage Hero block'),
+		'render_callback' => 'my_acf_block_render_callback',
+		'category' => 'text',
+		'icon' => 'format-image',
+		'keywords' => array('RI Recycle homepage hero', 'homepage hero', 'hero')
+	),
+	array(
+		'name' => 'ri-recycle-scroll-num',
+		'title' => __('RI Recyling Scrolling Number Block'),
+		'description' => __('A Custom scrolling number block with text content'),
+		'render_callback' => 'my_acf_block_render_callback',
+		'category' => 'text',
+		'icon' => 'format-image',
+		'keywords' => array('RI Recycle scrolling numbers', 'scrolling numbers', 'numbers')
+	),
+	array(
+		'name' => 'ri-recycle-content-img',
+		'title' => __('RI Recyling Content with Image Block'),
+		'description' => __('A Custom content block with an image that can be on either side'),
+		'render_callback' => 'my_acf_block_render_callback',
+		'category' => 'text',
+		'icon' => 'format-image',
+		'keywords' => array('RI Recycle content with image', 'content with image', 'image content')
+	),
+	array(
+		'name' => 'ri-recycle-cta',
+		'title' => __('RI Recyling Call to Action (CTA) block'),
+		'description' => __('A Custom call to action block with a button'),
+		'render_callback' => 'my_acf_block_render_callback',
+		'category' => 'text',
+		'icon' => 'format-image',
+		'keywords' => array('RI Recycle CTA', 'CTA', 'call to action', 'button')
+	),
 
 );

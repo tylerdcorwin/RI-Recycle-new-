@@ -54,6 +54,13 @@
     <script type="text/javascript"><?php the_field('fig_custom_js', 'option'); ?></script>
   <?php } ?>
 
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    });
+  </script>
+
   <?php wp_footer(); ?>
 </body>
 </html>

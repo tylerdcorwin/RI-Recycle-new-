@@ -15,7 +15,7 @@ h6
   font-size: $base-font-size
   line-height: $heading-line-height
   margin: 0 0 $small-spacing
-  color: $color1
+  color: $recycle_black
 
 h1
   @include responsive-type(54px, 64px, 1px)
@@ -34,33 +34,31 @@ h4
   font-weight: 600
 
 h5
-  @include responsive-type(18px, 26px, 0)
+  @include responsive-type(20px, 36px, 0)
   font-weight: 600
-  text-transform: uppercase
 
 h6
-  @include responsive-type(16px, 20px, 0)
-  text-transform: uppercase
+  @include responsive-type(18px, 20px, 0)
 
 p
-  @include responsive-type(18px, 26px, 0)
+  @include responsive-type(20px, 26px, 0)
   margin-top: 0
-  color: $charcoal
+  color: $recycle_black
 
 b
   @include responsive-type(18px, 26px, 0)
   font-weight: 600
-  color: $color1
+  color: $recycle_black
 
 a
-  color: $color3
+  color: $logo_green
   text-decoration: none
   transition: color $base-duration $base-timing
 
   &:active,
   &:focus,
   &:hover
-    color: mix($action-color, $black, 75%)
+    color: mix($logo_green, $black, 75%)
 
 hr
   border-bottom: $base-border

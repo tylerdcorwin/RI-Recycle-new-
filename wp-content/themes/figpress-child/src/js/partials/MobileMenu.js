@@ -12,16 +12,16 @@ if ( burger ) {
   });
 }
 
-const checkForHeader = () => {
-  // if user has scrolled any
-  let scrollPos = window.scrollY;
-  if( window.pageYOffset > 45) {
-    navMenu.classList.add('active');
-    logo.src = inverseLogo;
-  } else {
-    navMenu.classList.remove('active');
-    logo.src = logoSrc;
-  }
-}
-
-window.onscroll = checkForHeader;
+// const checkForHeader = () => {
+//   // if user has scrolled any
+//   let scrollPos = window.scrollY;
+//   if( window.pageYOffset > 45) {
+//     navMenu.classList.add('active');
+//     logo.src = inverseLogo;
+//   } else {
+//     navMenu.classList.remove('active');
+//     logo.src = logoSrc;
+//   }
+// }
+//
+// window.onscroll = checkForHeader;
