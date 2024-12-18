@@ -41,6 +41,14 @@
     </div>
   </footer>
 
+  <div class="scroll-up-btn">
+    <div class="outer-container">
+      <a href="#" id="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+
   <div class="modal-con">
     <div class="modal-content">
       <div class="close-modal"></div>

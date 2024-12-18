@@ -107,3 +107,27 @@
     li:first-of-type
       &::after
         content: ''
+
+.scroll-up-btn
+  +mobile-up
+    bottom: 10px
+    right: -10px
+  +tablet-up
+    bottom: 45px
+    right: 45px
+  position: fixed
+
+  #back-to-top
+    background-color: $logo_green
+    border-radius: 50%
+    padding: 16px 15px
+    opacity: 0
+    transition: 300ms ease all
+
+    &.active
+      opacity: 1
+
+    i
+      font-size: 22px
+      line-height: 52px
+      color: $white
