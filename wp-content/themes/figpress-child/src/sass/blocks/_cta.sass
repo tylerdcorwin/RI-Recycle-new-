@@ -13,6 +13,7 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+    overflow: hidden
 
   .cta-img-con
     +mobile-up
@@ -35,7 +36,7 @@
       width: 100%
     +tablet-up
       width: 58%
-      padding: 33px 10px
+      padding: 33px 10px 
 
     h3
       +responsive-type(36px, 38px, 0.5px)
@@ -51,11 +52,16 @@
       margin-bottom: 50px
       width: 100%
     +desktop
-      margin-bottom: 0px
+      margin: 0
       width: 17%
     display: flex
     align-items: center
 
-  .fig-btn
-    display: flex
-    align-items: center
+  .fig-trans-btn
+    +tablet-up
+      margin-left: auto
+      margin-right: auto
+    +desktop
+      margin: 0
+    // display: flex
+    // align-items: center

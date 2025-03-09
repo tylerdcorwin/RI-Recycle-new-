@@ -1,0 +1,49 @@
+.recycle-video-archive-wrap
+  width: 100%
+  position: relative
+  margin-bottom: 75px
+
+  h2
+    +mobile-up
+      width: 95%
+    +tablet-up
+      width: 55%
+    text-align: center
+    margin: 0 auto 28px
+    font-weight: 300
+
+  .recycle-video-con
+    display: flex
+    flex-wrap: wrap
+
+  .indiv-recycle-archive-video
+    +background-image
+    +mobile-up
+      width: 100%
+    +tablet-up
+      width: 45%
+      margin: 0 2.5% 18px
+    +tablet-up
+      width: 31%
+      margin: 0 1% 18px
+    height: 250px
+    position: relative
+    cursor: pointer
+
+    &:hover
+      &::after
+        width: 75px
+        height: 75px
+
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background-image: url(../img/icons/play-btn.svg)
+      background-size: contain
+      background-repeat: no-repeat
+      width: 65px
+      height: 65px
+      transition: 300ms ease all

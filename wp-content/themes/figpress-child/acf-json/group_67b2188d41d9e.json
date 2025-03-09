@@ -1,11 +1,11 @@
 {
-    "key": "group_5d67e66ddc56b",
-    "title": "Block: Leadership",
+    "key": "group_67b2188d41d9e",
+    "title": "Recycle Block: In The News",
     "fields": [
         {
-            "key": "field_5d67e6ac6a377",
+            "key": "field_67b2188de0a1a",
             "label": "Title",
-            "name": "leadership_title",
+            "name": "ri_recycle_news_title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -17,15 +17,16 @@
                 "id": ""
             },
             "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
             "placeholder": "",
             "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "append": ""
         },
         {
-            "key": "field_6079d38c4acc9",
-            "label": "Leadership",
-            "name": "leadership",
+            "key": "field_67b218c3e0a1b",
+            "label": "News Stories",
+            "name": "ri_recycle_news_stories",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -36,17 +37,18 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "layout": "block",
+            "pagination": 0,
             "min": 0,
             "max": 0,
-            "layout": "block",
-            "button_label": "Add Leader",
+            "collapsed": "",
+            "button_label": "Add Row",
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_6079d3974acca",
+                    "key": "field_67b218f6e0a1c",
                     "label": "Image",
-                    "name": "leader_image",
+                    "name": "ri_recycle_news_image",
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
@@ -58,7 +60,6 @@
                         "id": ""
                     },
                     "return_format": "array",
-                    "preview_size": "medium",
                     "library": "all",
                     "min_width": "",
                     "min_height": "",
@@ -67,75 +68,36 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": "",
-                    "parent_repeater": "field_6079d38c4acc9"
-                },
-                {
-                    "key": "field_6079d3a44accb",
-                    "label": "Name",
-                    "name": "leader_name",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": "",
-                    "parent_repeater": "field_6079d38c4acc9"
-                },
-                {
-                    "key": "field_6079d3ba4accc",
-                    "label": "Position",
-                    "name": "leader_position",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": "",
-                    "parent_repeater": "field_6079d38c4acc9"
-                },
-                {
-                    "key": "field_67a8c99ab4fe2",
-                    "label": "Email Address",
-                    "name": "leader_email_address",
-                    "aria-label": "",
-                    "type": "email",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
                     "allow_in_bindings": 0,
-                    "placeholder": "optional",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_6079d38c4acc9"
+                    "preview_size": "medium",
+                    "parent_repeater": "field_67b218c3e0a1b"
                 },
                 {
-                    "key": "field_6079d3d34accd",
-                    "label": "Bio",
-                    "name": "leader_bio",
+                    "key": "field_67b21907e0a1d",
+                    "label": "Article Title",
+                    "name": "ri_recycle_news_article_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_67b218c3e0a1b"
+                },
+                {
+                    "key": "field_67b21926e0a1e",
+                    "label": "Article Description",
+                    "name": "ri_recycle_news_article_description",
                     "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
@@ -147,35 +109,32 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": "",
                     "maxlength": "",
+                    "allow_in_bindings": 0,
                     "rows": "",
-                    "new_lines": "wpautop",
-                    "parent_repeater": "field_6079d38c4acc9"
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_67b218c3e0a1b"
+                },
+                {
+                    "key": "field_67cdc3234a4f0",
+                    "label": "Article Link",
+                    "name": "ri_recycle_news_article_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "allow_in_bindings": 0,
+                    "parent_repeater": "field_67b218c3e0a1b"
                 }
             ]
-        },
-        {
-            "key": "field_6079d3fe4acce",
-            "label": "Button",
-            "name": "leadership_button",
-            "aria-label": "",
-            "type": "clone",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "clone": [
-                "group_5c1017065a923"
-            ],
-            "display": "group",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 1
         }
     ],
     "location": [
@@ -183,7 +142,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/leadership"
+                "value": "acf\/ri-recycle-in-the-news"
             }
         ]
     ],
@@ -196,5 +155,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1739117446
+    "modified": 1741538121
 }

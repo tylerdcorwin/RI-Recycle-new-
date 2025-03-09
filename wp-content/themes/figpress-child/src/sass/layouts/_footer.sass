@@ -7,9 +7,9 @@
 .footer-con
   width: 100%
   position: relative
-  background: $color1
+  background: $off_white_bg
   clear: both
-  padding: 35px 0
+  padding: 35px 0 0
   border-top: 5px solid $color3
 
 .footer-top-con
@@ -18,15 +18,13 @@
   align-items: center
   flex-wrap: wrap
 
-  .footer-logo-con
-    width: 33%
-
   .footer-logo
-    display: flex
-    align-items: center
+    display: block
 
   .footer-logo-img
     max-width: 200px
+    max-height: 100px
+    object-fit: contain
 
   .footer-search-bar
     position: relative
@@ -69,17 +67,20 @@
       margin-right: 30px
 
     a
-      color: $white
+      color: $logo_blue
+
+      &:hover
+        text-decoration: underline
 
     h6
-      color: $white
+      color: $recycle_black
       padding: 10px 0
-      border-bottom: 1px solid $offwhite
+      border-bottom: 1px solid $logo_blue
 
 .footer-bottom
-  border-top: 1px solid $offwhite
+  border-top: 1px solid $logo_blue
   padding: 15px 0
-  color: $offwhite
+  // color: $offwhite
   display: flex
   justify-content: space-between
 
@@ -87,12 +88,12 @@
     display: flex
 
     a
-      color: $offwhite
+      color: $recycle_black
       margin-left: 16px
       position: relative
 
       &:hover
-        color: $white
+        text-decoration: underline
 
     li
       position: relative
@@ -102,7 +103,7 @@
         content: '|'
         left: 6px
         top: 0px
-        color: $offwhite
+        color: $logo_blue
 
     li:first-of-type
       &::after
@@ -116,6 +117,10 @@
     bottom: 45px
     right: 45px
   position: fixed
+  z-index: -1
+
+  &.active
+    z-index: 9
 
   #back-to-top
     background-color: $logo_green

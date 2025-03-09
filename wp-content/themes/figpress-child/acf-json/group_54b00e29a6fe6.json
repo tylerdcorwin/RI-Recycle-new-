@@ -6,6 +6,7 @@
             "key": "field_54b00e3a415cb",
             "label": "Email",
             "name": "fig_staff_email",
+            "aria-label": "",
             "type": "email",
             "instructions": "",
             "required": 0,
@@ -24,6 +25,7 @@
             "key": "field_54b00e62415cc",
             "label": "Phone",
             "name": "fig_staff_phone",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -45,6 +47,7 @@
             "key": "field_54b00ed5415cd",
             "label": "Job Title",
             "name": "fig_staff_job",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -68,7 +71,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
+                "value": "fig_staff"
             }
         ]
     ],
@@ -78,7 +81,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": false,
     "description": "",
-    "modified": 1620919996
+    "show_in_rest": false,
+    "modified": 1741544378
 }

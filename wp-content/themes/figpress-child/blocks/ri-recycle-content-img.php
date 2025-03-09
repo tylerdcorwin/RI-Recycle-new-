@@ -6,6 +6,7 @@
   $cta_pre_title = get_field('recycle_content_img_cta_pre_title');
   $cta_title = get_field('recycle_content_img_cta_title');
   $cta_content = get_field('recycle_content_img_cta_content');
+  $cta_btn_style = get_field('recycle_content_img_cta_button_style');
   $cta_btn = get_field('recycle_content_img_cta_button');
   $img = get_field('recycle_content_img_image');
 ?>
@@ -32,7 +33,7 @@
             $link_title = $cta_btn['title'];
             $link_target = $cta_btn['target'] ? $cta_btn['target'] : '_self';
             ?>
-            <a class="fig-btn" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+            <a class="fig-btn <?php echo $cta_btn_style; ?>" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
           <?php } ?>
         <?php } ?>
       </div>

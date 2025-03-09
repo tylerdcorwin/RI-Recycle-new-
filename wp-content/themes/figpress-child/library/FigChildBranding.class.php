@@ -70,7 +70,7 @@
 
     // Update Footer Text
     public static function update_footer_text () {
-      echo "Built with &#10084; by <a href='http://www.figmints.com' target='_blank'>Figmints</a>.";
+      echo "Built with &#10084; by Ty";
     }
 
     // Remove Footer WP Version

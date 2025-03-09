@@ -1,0 +1,257 @@
+.calculator-wrap
+  width: 100%
+  position: relative
+
+  .calculator-con
+    background-color: rgba($logo_green, 0.9)
+    border-radius: 15px
+
+  .main-title
+    +responsive-type(55px, 65px)
+    text-align: center
+    margin-bottom: 45px
+
+.slider-con
+  width: 100%
+
+.calc-card
+  height: 0px
+  opacity: 0
+  padding: 0
+  overflow: hidden
+  transition: ease all 300ms
+
+  &.active
+    +mobile-up
+      padding: 100px 25px
+    +tablet-up
+      padding: 125px 55px
+    +desktop
+      padding: 145px
+    height: auto
+    opacity: 1
+
+  &.school-choice
+    .school-title
+      color: $white
+      text-align: center
+      margin-bottom: 75px
+
+    .school-choice-con
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+
+    .indiv-choice
+      +mobile-up
+        width: 100%
+      +tablet-up
+        width: 27%
+      padding: 20px
+      box-shadow: $box-shadow
+      background-color: $white
+      border-radius: 10px
+      margin-bottom: 45px
+      cursor: pointer
+      transition: ease all 300ms
+
+      &:hover
+        transform: scale(1.03)
+
+    .card-img
+      width: 65px
+      height: 65px
+      background-position: center
+      background-size: contain
+      background-repeat: no-repeat
+      margin: 0 auto 25px
+
+      &.elementary
+        background-image: url('../img/icons/school-bus.svg')
+
+      &.middle
+        background-image: url('../img/icons/middle-school.svg')
+
+      &.high
+        background-image: url('../img/icons/graduation.svg')
+
+    .card-title
+      text-align: center
+
+  &.enrollment
+    .enrollment-title
+      color: $white
+      text-align: center
+      margin-bottom: 35px
+
+    .content-con
+      display: block
+      text-align: center
+      margin-bottom: 50px
+
+      input
+        width: 75%
+        padding: 15px
+        border-radius: 4px
+        border: 1px solid $offwhite
+
+
+    .help-link
+      color: $white
+
+      &:hover
+        color: $spacer
+
+    .btn-con
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+
+    span
+      color: $white
+      font-size: 24px
+      font-weight: bold
+
+    .next-btn
+      position: relative
+      padding-right: 15px
+      cursor: pointer
+
+      &::after
+        content: "\f105"
+        font-family: FontAwesome
+        position: absolute
+        right: 0px
+        top: 50%
+        transform: translateY(-50%)
+        transition: right 300ms ease
+
+      &:hover, &:focus, &:active
+        &::after
+          right: -5px
+
+    .prev-btn
+      position: relative
+      padding-left: 15px
+      cursor: pointer
+
+      &::after
+        content: "\f105"
+        font-family: FontAwesome
+        position: absolute
+        left: 0px
+        top: 50%
+        transform: translateY(-50%) rotate(180deg)
+        transition: left 300ms ease
+
+      &:hover, &:focus, &:active
+        &::after
+          left: -5px
+
+  &.results
+    .disposed-con, .donated-con
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 45px
+
+    .content-con
+      +mobile-up
+        width: 100%
+      +tablet-up
+        width: 45%
+      display: block
+
+    h3
+      +responsive-type(45px, 55px)
+      +mobile-up
+        text-align: center
+      +tablet-up
+        text-align: left
+      color: $white
+
+    .total-disposed, .total-donated
+      position: absolute
+      font-size: 60px
+      line-height: 70px
+      font-weight: 400
+      color: #141414
+      font-family: $base-font-family
+
+    .total-disposed
+      top: 20px
+      left: 20px
+
+    .total-donated
+      text-align: center
+      top: 20px
+      left: 50%
+      transform: translateX(-50%)
+
+    .school-waste, .donated-img
+      +mobile-up
+        width: 100%
+      +tablet-up
+        width: 45%
+      position: relative
+      height: 300px
+      background-size: cover
+      background-position: center
+      background-repeat: no-repeat
+      border-radius: 15px
+
+    .school-waste
+      background-image: url('../img/school-waste.png')
+
+    .donated-img
+      background-image: url('../img/donate-food.png')
+
+    .btn-con
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+
+    .start-over
+      color: $white
+      font-size: 24px
+      font-weight: bold
+      position: relative
+      padding-right: 15px
+      margin-bottom: 0px
+      cursor: pointer
+
+      &::after
+        content: "\f105"
+        font-family: FontAwesome
+        position: absolute
+        right: 0px
+        top: 50%
+        transform: translateY(-50%)
+        transition: right 300ms ease
+
+      &:hover, &:focus, &:active
+        &::after
+          right: -5px
+
+    .back-to-enrollment
+      color: $white
+      font-size: 24px
+      font-weight: bold
+      position: relative
+      padding-left: 15px
+      cursor: pointer
+
+      &::after
+        content: "\f105"
+        font-family: FontAwesome
+        position: absolute
+        left: 0px
+        top: 50%
+        transform: translateY(-50%) rotate(180deg)
+        transition: left 300ms ease
+
+      &:hover, &:focus, &:active
+        &::after
+          left: -5px

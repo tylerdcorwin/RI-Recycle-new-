@@ -4,7 +4,7 @@
   $icon_grid_link = get_field('icon_grid_link');
 ?>
 
-<section class="icon-grid-wrap">
+<section class="icon-grid-wrap" data-aos="fade-up">
   <div class="outer-container">
     <?php if( $icon_grid_tagline ) { ?>
       <h5><?php echo $icon_grid_tagline; ?></h5>
@@ -25,7 +25,7 @@
     <?php } ?>
     <?php if ( $icon_grid_link['label'] ) { ?>
       <div class="btn-con">
-        <?php FigChildHelpers::get_links($icon_grid_link, 'fig-btn-orange'); ?>
+        <?php FigChildHelpers::get_links($icon_grid_link, 'fig-btn'); ?>
       </div>
     <?php } ?>
   </div>

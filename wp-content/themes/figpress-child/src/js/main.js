@@ -13,5 +13,7 @@ import './partials/slider';
 import './partials/_inline-video';
 import './partials/recycle';
 import './resources/resources.js';
+import './calculator/calculator.js';
+import './calculator/cards.js';
 
 import '../sass/app.scss';

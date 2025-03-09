@@ -4,7 +4,7 @@
   $form = get_field('fig_half_form');
 ?>
 
-<section class="wysiwyg-form-wrap">
+<section class="wysiwyg-form-wrap" data-aos="fade-up">
   <div class="outer-container">
     <?php if ( $title ) { ?>
       <h3><?php echo $title; ?></h3>

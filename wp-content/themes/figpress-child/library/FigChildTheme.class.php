@@ -177,15 +177,15 @@ $acf_block_array = 	array(
 		'icon' => 'format-image',
 		'keywords' => array('Icon Navigation', 'Navigation'),
 	),
-	array(
-		'name' => 'inline-video',
-		'title' => __('Inline Video'),
-		'description' => __('Inline Video Block'),
-		'render_callback' => 'my_acf_block_render_callback',
-		'category' => 'formatting',
-		'icon' => 'format-image',
-		'keywords' => array('inline video', 'video embed')
-	),
+	// array(
+	// 	'name' => 'inline-video',
+	// 	'title' => __('Inline Video'),
+	// 	'description' => __('Inline Video Block'),
+	// 	'render_callback' => 'my_acf_block_render_callback',
+	// 	'category' => 'formatting',
+	// 	'icon' => 'format-image',
+	// 	'keywords' => array('inline video', 'video embed')
+	// ),
 	array(
 		'name' => 'button',
 		'title' => __('Button'),
@@ -347,6 +347,33 @@ $acf_block_array = 	array(
 		'category' => 'text',
 		'icon' => 'format-image',
 		'keywords' => array('RI Recycle CTA', 'CTA', 'call to action', 'button')
+	),
+	array(
+		'name' => 'ri-recycle-food-waste-calculator',
+		'title' => __('RI Recyling Food waste calculator block'),
+		'description' => __('A Custom food waste calculator block'),
+		'render_callback' => 'my_acf_block_render_callback',
+		'category' => 'text',
+		'icon' => 'format-image',
+		'keywords' => array('RI Recycle food waste estimator', 'food waste', 'calculator', 'calc')
+	),
+	array(
+		'name' => 'ri-recycle-in-the-news',
+		'title' => __('RI Recyling In The News block'),
+		'description' => __('A Custom news block with links to our articles'),
+		'render_callback' => 'my_acf_block_render_callback',
+		'category' => 'text',
+		'icon' => 'format-image',
+		'keywords' => array('RI Recycle in the news', 'in the news', 'news', 'projects')
+	),
+	array(
+		'name' => 'ri-recycle-video-archive',
+		'title' => __('RI Recyling Video Archive block'),
+		'description' => __('A Custom news block to showcase youtube videos'),
+		'render_callback' => 'my_acf_block_render_callback',
+		'category' => 'text',
+		'icon' => 'format-image',
+		'keywords' => array('RI Recycle video archive', 'video archive', 'archive', 'projects')
 	),
 
 );
