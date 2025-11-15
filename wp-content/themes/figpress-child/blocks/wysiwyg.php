@@ -1,7 +1,6 @@
 <?php
   $content_area = get_field('content_area');
   $full_width = get_field('content_full_width');
-  print_r($full_width)
 ?>
 
 <section class="wysiwyg-content-wrap" data-aos="fade-up">
