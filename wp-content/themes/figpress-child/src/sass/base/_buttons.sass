@@ -1,13 +1,13 @@
 @mixin buttonMake($color: $color3)
-  @include responsive-type(18px, 22px, 2px)
+  @include responsive-type(18px, 22px, .5px)
   display: inline-block
   text-decoration: none
-  text-transform: uppercase
+  text-transform: capitalize
   font-family: $base-font-family
   font-weight: $bold
   appearance: none
   border: 0
-  border-radius: 25px
+  border-radius: 5px
   color: #fff
   background-color: $color
   user-select: none
@@ -40,7 +40,7 @@
   font-family: $base-font-family
   position: relative
   padding-right: 15px
-  text-decoration: underline
+  // text-decoration: underline
   color: $text_color
 
   &::after
@@ -53,11 +53,26 @@
     transition: 300ms ease all
 
   &:hover, &:focus, &:active
+    color: $text_color
+    text-decoration: underline
+
     &::after
       right: -5px
 
 .fig-btn
-  @include buttonMake($color5)
+  @include buttonMake($logo_green)
+
+.fig-btn.red
+  @include buttonMake($logo_red)
+
+.fig-btn.yellow
+  @include buttonMake($logo_yellow)
+
+.fig-btn.green
+  @include buttonMake($logo_green)
+
+.fig-btn.blue
+  @include buttonMake($logo_blue)
 
 .fig-trans-btn
   @include buttonMake(transparent)

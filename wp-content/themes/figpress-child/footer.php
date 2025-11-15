@@ -41,6 +41,14 @@
     </div>
   </footer>
 
+  <div class="scroll-up-btn">
+    <div class="outer-container">
+      <a href="#" id="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+
   <div class="modal-con">
     <div class="modal-content">
       <div class="close-modal"></div>
@@ -53,6 +61,13 @@
     <!-- Custom JS -->
     <script type="text/javascript"><?php the_field('fig_custom_js', 'option'); ?></script>
   <?php } ?>
+
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    });
+  </script>
 
   <?php wp_footer(); ?>
 </body>

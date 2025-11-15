@@ -1,0 +1,46 @@
+{
+    "key": "group_67b210166c745",
+    "title": "Recycle Block: Food Waste Estimator",
+    "fields": [
+        {
+            "key": "field_67b210166dcc1",
+            "label": "Title",
+            "name": "ri_recycle_estimator_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "The calculator will automatically appear below the title on the page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/ri-recycle-food-waste-calculator"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1739722844
+}

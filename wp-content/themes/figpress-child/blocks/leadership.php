@@ -15,6 +15,7 @@
           $img = get_sub_field('leader_image');
           $name = get_sub_field('leader_name');
           $position = get_sub_field('leader_position');
+          $email = get_sub_field('leader_email_address');
           $bio = get_sub_field('leader_bio');
           ?>
           <div class="indiv-leader">
@@ -27,8 +28,11 @@
             <?php if ( $position ) { ?>
               <h6><?php echo $position; ?></h6>
             <?php } ?>
+            <?php if ( $email ) { ?>
+              <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+            <?php } ?>
             <?php if ( $bio ) { ?>
-              <span class="open-bio" data-bio="<?php echo $count; ?>">See More</span>
+              <p class="open-bio" data-bio="<?php echo $count; ?>">Learn More</p>
             <?php } ?>
           </div>
           <?php if ( $bio ) { ?>
@@ -46,6 +50,9 @@
                     <h6><?php echo $position; ?></h6>
                   <?php } ?>
                   <p><?php echo $bio; ?></p>
+                  <?php if ( $email ) { ?>
+                    <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+                  <?php } ?>
                 </div>
               </div>
             </div>
@@ -55,7 +62,7 @@
     <?php } ?>
     <?php if ( $btn ) { ?>
       <div class="btn-con">
-        <?php FigChildHelpers::get_links($btn, 'fig-btn-orange'); ?>
+        <?php FigChildHelpers::get_links($btn, 'fig-btn'); ?>
       </div>
     <?php } ?>
   </div>

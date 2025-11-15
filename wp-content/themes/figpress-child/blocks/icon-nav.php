@@ -5,7 +5,7 @@
   $btn = get_field('fig_icon_nav_button');
 ?>
 
-<section class="icon-nav-wrap">
+<section class="icon-nav-wrap" data-aos="fade-up">
   <div class="outer-container">
     <div class="inner-container">
       <?php if ( $tagline ) { ?>
@@ -46,7 +46,7 @@
         <?php } ?>
       </div>
     <?php } ?>
-    <?php if ( $btn ) { ?>
+    <?php if ( $btn['label'] ) { ?>
       <div class="btn-con">
         <?php FigChildHelpers::get_links($btn, 'fig-btn'); ?>
       </div>

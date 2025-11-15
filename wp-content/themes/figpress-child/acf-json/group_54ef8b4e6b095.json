@@ -6,6 +6,7 @@
             "key": "field_54ef8b566bf2a",
             "label": "Custom CSS",
             "name": "fig_custom_css",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -27,6 +28,7 @@
             "key": "field_54ef8bea6bf2b",
             "label": "Custom JS",
             "name": "fig_custom_js",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "To use jQuery code wrap it into (function($) { ... })(jQuery);",
             "required": 0,
@@ -62,5 +64,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1620919983
+    "show_in_rest": 0,
+    "modified": 1730645294
 }

@@ -1,8 +1,8 @@
 <?php if ( have_rows('statistics') ) { ?>
-  <section class="statistics-wrap">
+  <section class="statistics-wrap" data-aos="fade-up">
     <?php while ( have_rows('statistics') ) { the_row();
-      $number      = get_sub_field('statistic_number');
-      $label       = get_sub_field('statistic_label');
+      $number = get_sub_field('statistic_number');
+      $label = get_sub_field('statistic_label');
       $description = get_sub_field('statistic_description');
     ?>
       <div class="statistic">

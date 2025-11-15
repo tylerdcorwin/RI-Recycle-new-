@@ -6,6 +6,7 @@
             "key": "field_5d67e6ac6a377",
             "label": "Title",
             "name": "leadership_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_6079d38c4acc9",
             "label": "Leadership",
             "name": "leadership",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -39,11 +41,13 @@
             "max": 0,
             "layout": "block",
             "button_label": "Add Leader",
+            "rows_per_page": 20,
             "sub_fields": [
                 {
                     "key": "field_6079d3974acca",
                     "label": "Image",
                     "name": "leader_image",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -62,12 +66,14 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "",
+                    "parent_repeater": "field_6079d38c4acc9"
                 },
                 {
                     "key": "field_6079d3a44accb",
                     "label": "Name",
                     "name": "leader_name",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -81,12 +87,14 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_6079d38c4acc9"
                 },
                 {
                     "key": "field_6079d3ba4accc",
                     "label": "Position",
                     "name": "leader_position",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -100,12 +108,35 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_6079d38c4acc9"
+                },
+                {
+                    "key": "field_67a8c99ab4fe2",
+                    "label": "Email Address",
+                    "name": "leader_email_address",
+                    "aria-label": "",
+                    "type": "email",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "optional",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6079d38c4acc9"
                 },
                 {
                     "key": "field_6079d3d34accd",
                     "label": "Bio",
                     "name": "leader_bio",
+                    "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -119,7 +150,8 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": "",
-                    "new_lines": "wpautop"
+                    "new_lines": "wpautop",
+                    "parent_repeater": "field_6079d38c4acc9"
                 }
             ]
         },
@@ -127,6 +159,7 @@
             "key": "field_6079d3fe4acce",
             "label": "Button",
             "name": "leadership_button",
+            "aria-label": "",
             "type": "clone",
             "instructions": "",
             "required": 0,
@@ -162,5 +195,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1620919900
+    "show_in_rest": 0,
+    "modified": 1739117446
 }

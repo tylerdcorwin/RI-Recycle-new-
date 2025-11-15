@@ -6,6 +6,7 @@
             "key": "field_5f591c4a3a63c",
             "label": "Position",
             "name": "employee_position",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_5f591c5a3a63d",
             "label": "Email",
             "name": "employee_email",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -44,6 +46,7 @@
             "key": "field_5f591c603a63e",
             "label": "Bio",
             "name": "employee_bio",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -63,6 +66,7 @@
             "key": "field_5f591c783a640",
             "label": "Image",
             "name": "employee_image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -87,9 +91,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "widget",
                 "operator": "==",
-                "value": "post"
+                "value": "meta"
             }
         ]
     ],
@@ -99,7 +103,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": false,
     "description": "",
-    "modified": 1620919986
+    "show_in_rest": 0,
+    "modified": 1741544387
 }

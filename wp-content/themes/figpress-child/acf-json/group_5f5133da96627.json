@@ -6,6 +6,7 @@
             "key": "field_5f5133df39942",
             "label": "Testimonials",
             "name": "testimonials",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -19,12 +20,14 @@
             "min": 0,
             "max": 0,
             "layout": "row",
-            "button_label": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
             "sub_fields": [
                 {
                     "key": "field_5f51340039943",
                     "label": "Testimonial Content",
                     "name": "testimonial_content",
+                    "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -35,15 +38,18 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": "",
                     "maxlength": "",
-                    "rows": "",
-                    "new_lines": ""
+                    "allow_in_bindings": 1,
+                    "rows": 3,
+                    "placeholder": "",
+                    "new_lines": "br",
+                    "parent_repeater": "field_5f5133df39942"
                 },
                 {
                     "key": "field_5f51340d39944",
                     "label": "Testimonial Author",
                     "name": "testimonial_author",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -57,12 +63,14 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "parent_repeater": "field_5f5133df39942"
                 },
                 {
                     "key": "field_5f5135536a0cd",
                     "label": "Testimonial Background Image",
                     "name": "testimonial_bg_img",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -81,7 +89,8 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "",
+                    "parent_repeater": "field_5f5133df39942"
                 }
             ]
         }
@@ -103,5 +112,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1620919971
+    "show_in_rest": 0,
+    "modified": 1734537659
 }

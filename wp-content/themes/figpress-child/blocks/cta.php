@@ -5,7 +5,7 @@
   $cta_button = get_field('cta_button');
 ?>
 
-<section class="call-to-action-wrap">
+<section class="call-to-action-wrap" data-aos="fade-up">
   <div class="outer-container">
     <div class="call-to-action">
       <div class="cta-img-con">

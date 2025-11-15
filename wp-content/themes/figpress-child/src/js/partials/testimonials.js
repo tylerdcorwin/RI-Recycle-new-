@@ -7,6 +7,8 @@ sliderContent.forEach(content => {
     prevNextButtons: false,
     contain: true,
     wrapAround: true,
-    pageDots: true
+    pageDots: true,
+    autoPlay: 4000,
+    pauseAutoPlayOnHover: true
   });
 });

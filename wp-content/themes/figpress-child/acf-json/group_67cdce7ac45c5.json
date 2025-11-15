@@ -1,0 +1,92 @@
+{
+    "key": "group_67cdce7ac45c5",
+    "title": "Recycle Block: Video Archive",
+    "fields": [
+        {
+            "key": "field_67cdce7b15bde",
+            "label": "Title",
+            "name": "recycle_video_archive_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67cdce8d15bdf",
+            "label": "Video Archive",
+            "name": "recycle_video_archive",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_67cdce9a15be0",
+                    "label": "YouTube Video URL",
+                    "name": "recycle_video_archive_youtube_video_url",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Copy and Paste the URL from the YouTube video that you wish to add to this field.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "https:\/\/www.youtube.com\/watch?v=u31qwQUeGuM",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_67cdce8d15bdf"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/ri-recycle-video-archive"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1741542745
+}

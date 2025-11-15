@@ -21,6 +21,13 @@ fig.addLoopedFunction( document.querySelectorAll('.play-video-homepage'), 'click
   fig.checkAndAddVideo( document.querySelector('.embed-container'), videoSource );
 });
 
+fig.addLoopedFunction( document.querySelectorAll('.indiv-recycle-archive-video'), 'click', (e) => {
+  document.querySelector('.modal-con').classList.add('active');
+  document.querySelector('.embed-container').innerHTML = '';
+  let videoSource = e.target.getAttribute('data-video-url');
+  fig.checkAndAddVideo( document.querySelector('.embed-container'), videoSource );
+});
+
 fig.addCustomEvent( document.querySelector('.modal-con'), 'click', () => {
   let modalContent = document.querySelector('.modal-content');
   if ( modalContent.classList.contains('active-image') ) {

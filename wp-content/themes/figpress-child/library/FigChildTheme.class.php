@@ -60,15 +60,15 @@
 
 // Blocks for Gutenberg
 $acf_block_array = 	array(
-	array(
-		'name' => 'homepage-hero',
-		'title' => __('Homepage Hero'),
-		'description' => __('Homepage Hero Callout'),
-		'render_callback' => 'my_acf_block_render_callback',
-		'category' => 'formatting',
-		'icon' => 'format-image',
-		'keywords' => array('homepage hero callout', 'hero')
-	),
+	// array(
+	// 	'name' => 'homepage-hero',
+	// 	'title' => __('Homepage Hero'),
+	// 	'description' => __('Homepage Hero Callout'),
+	// 	'render_callback' => 'my_acf_block_render_callback',
+	// 	'category' => 'formatting',
+	// 	'icon' => 'format-image',
+	// 	'keywords' => array('homepage hero callout', 'hero')
+	// ),
 	array(
 		'name' => 'cta',
 		'title' => __('Call to Action'),
@@ -78,15 +78,15 @@ $acf_block_array = 	array(
 		'icon' => 'format-image',
 		'keywords' => array('call to action', 'cta'),
 	),
-	array(
-		'name' => 'map',
-		'title' => __('Map'),
-		'description' => __('A Custom Map'),
-		'render_callback' => 'my_acf_block_render_callback',
-		'category' => 'formatting',
-		'icon' => 'format-image',
-		'keywords' => array('map with pins', 'map'),
-	),
+	// array(
+	// 	'name' => 'map',
+	// 	'title' => __('Map'),
+	// 	'description' => __('A Custom Map'),
+	// 	'render_callback' => 'my_acf_block_render_callback',
+	// 	'category' => 'formatting',
+	// 	'icon' => 'format-image',
+	// 	'keywords' => array('map with pins', 'map'),
+	// ),
 	array(
 		'name' => 'content-with-image',
 		'title' => __('Content with Image'),
@@ -105,15 +105,15 @@ $acf_block_array = 	array(
 		'icon' => 'format-image',
 		'keywords' => array('small overview', 'overview title with small description'),
 	),
-	array(
-		'name' => 'slider',
-		'title' => __('Slider'),
-		'description' => __('A Custom Slider'),
-		'render_callback' => 'my_acf_block_render_callback',
-		'category' => 'formatting',
-		'icon' => 'format-image',
-		'keywords' => array('Slider', 'slideshow'),
-	),
+	// array(
+	// 	'name' => 'slider',
+	// 	'title' => __('Slider'),
+	// 	'description' => __('A Custom Slider'),
+	// 	'render_callback' => 'my_acf_block_render_callback',
+	// 	'category' => 'formatting',
+	// 	'icon' => 'format-image',
+	// 	'keywords' => array('Slider', 'slideshow'),
+	// ),
 	array(
 		'name' => 'icon-grid',
 		'title' => __('Icon Grid'),
@@ -177,15 +177,15 @@ $acf_block_array = 	array(
 		'icon' => 'format-image',
 		'keywords' => array('Icon Navigation', 'Navigation'),
 	),
-	array(
-		'name' => 'inline-video',
-		'title' => __('Inline Video'),
-		'description' => __('Inline Video Block'),
-		'render_callback' => 'my_acf_block_render_callback',
-		'category' => 'formatting',
-		'icon' => 'format-image',
-		'keywords' => array('inline video', 'video embed')
-	),
+	// array(
+	// 	'name' => 'inline-video',
+	// 	'title' => __('Inline Video'),
+	// 	'description' => __('Inline Video Block'),
+	// 	'render_callback' => 'my_acf_block_render_callback',
+	// 	'category' => 'formatting',
+	// 	'icon' => 'format-image',
+	// 	'keywords' => array('inline video', 'video embed')
+	// ),
 	array(
 		'name' => 'button',
 		'title' => __('Button'),
@@ -267,50 +267,113 @@ $acf_block_array = 	array(
 		'icon' => 'format-image',
 		'keywords' => array('full width image', 'image', 'picture')
 	),
+	// array(
+	// 	'name' => 'lp-hero-form-asset',
+	// 	'title' => __('Landing Page Hero: Lead Capture'),
+	// 	'description' => __('Landing Page Hero: Lead Capture'),
+	// 	'render_callback' => 'my_acf_block_render_callback',
+	// 	'category' => 'formatting',
+	// 	'icon' => 'format-image',
+	// 	'keywords' => array('landing page', 'hero', 'form', 'asset', 'lead capture', 'lp hero')
+	// ),
+	// array(
+	// 	'name' => 'lp-hero-overlap-form',
+	// 	'title' => __('Landing Page Hero: Overlap Form'),
+	// 	'description' => __('Landing Page Hero: Overlap Form'),
+	// 	'render_callback' => 'my_acf_block_render_callback',
+	// 	'category' => 'formatting',
+	// 	'icon' => 'format-image',
+	// 	'keywords' => array('landing page hero', 'hero', 'form', 'overlap form', 'lead capture', 'lp hero')
+	// ),
+	// array(
+	// 	'name' => 'lp-hero-overlap-asset',
+	// 	'title' => __('Landing Page Hero: Overlap Asset'),
+	// 	'description' => __('Landing Page Hero: Overlap Asset'),
+	// 	'render_callback' => 'my_acf_block_render_callback',
+	// 	'category' => 'formatting',
+	// 	'icon' => 'format-image',
+	// 	'keywords' => array('landing page hero', 'hero', 'asset', 'overlap asset', 'lp hero')
+	// ),
+	// array(
+	// 	'name' => 'lp-hero-inline-video',
+	// 	'title' => __('Landing Page Hero: Inline Video'),
+	// 	'description' => __('Landing Page Hero: Inline Video'),
+	// 	'render_callback' => 'my_acf_block_render_callback',
+	// 	'category' => 'formatting',
+	// 	'icon' => 'format-image',
+	// 	'keywords' => array('landing page hero inline video', 'hero', 'inline video', 'video', 'lp hero')
+	// ),
+	// array(
+	// 	'name' => 'landing-full-width-form',
+	// 	'title' => __('Landing Page Full Width Form'),
+	// 	'description' => __('A Custom landing page full width form'),
+	// 	'render_callback' => 'my_acf_block_render_callback',
+	// 	'category' => 'text',
+	// 	'icon' => 'format-image',
+	// 	'keywords' => array('Landing Page form', 'form', 'landing page full width form')
+	// ),
 	array(
-		'name' => 'lp-hero-form-asset',
-		'title' => __('Landing Page Hero: Lead Capture'),
-		'description' => __('Landing Page Hero: Lead Capture'),
-		'render_callback' => 'my_acf_block_render_callback',
-		'category' => 'formatting',
-		'icon' => 'format-image',
-		'keywords' => array('landing page', 'hero', 'form', 'asset', 'lead capture', 'lp hero')
-	),
-	array(
-		'name' => 'lp-hero-overlap-form',
-		'title' => __('Landing Page Hero: Overlap Form'),
-		'description' => __('Landing Page Hero: Overlap Form'),
-		'render_callback' => 'my_acf_block_render_callback',
-		'category' => 'formatting',
-		'icon' => 'format-image',
-		'keywords' => array('landing page hero', 'hero', 'form', 'overlap form', 'lead capture', 'lp hero')
-	),
-	array(
-		'name' => 'lp-hero-overlap-asset',
-		'title' => __('Landing Page Hero: Overlap Asset'),
-		'description' => __('Landing Page Hero: Overlap Asset'),
-		'render_callback' => 'my_acf_block_render_callback',
-		'category' => 'formatting',
-		'icon' => 'format-image',
-		'keywords' => array('landing page hero', 'hero', 'asset', 'overlap asset', 'lp hero')
-	),
-	array(
-		'name' => 'lp-hero-inline-video',
-		'title' => __('Landing Page Hero: Inline Video'),
-		'description' => __('Landing Page Hero: Inline Video'),
-		'render_callback' => 'my_acf_block_render_callback',
-		'category' => 'formatting',
-		'icon' => 'format-image',
-		'keywords' => array('landing page hero inline video', 'hero', 'inline video', 'video', 'lp hero')
-	),
-	array(
-		'name' => 'landing-full-width-form',
-		'title' => __('Landing Page Full Width Form'),
-		'description' => __('A Custom landing page full width form'),
+		'name' => 'ri-recycle-hero',
+		'title' => __('RI Recyling Hero'),
+		'description' => __('A Custom Homepage Hero block'),
 		'render_callback' => 'my_acf_block_render_callback',
 		'category' => 'text',
 		'icon' => 'format-image',
-		'keywords' => array('Landing Page form', 'form', 'landing page full width form')
+		'keywords' => array('RI Recycle homepage hero', 'homepage hero', 'hero')
+	),
+	array(
+		'name' => 'ri-recycle-scroll-num',
+		'title' => __('RI Recyling Scrolling Number Block'),
+		'description' => __('A Custom scrolling number block with text content'),
+		'render_callback' => 'my_acf_block_render_callback',
+		'category' => 'text',
+		'icon' => 'format-image',
+		'keywords' => array('RI Recycle scrolling numbers', 'scrolling numbers', 'numbers')
+	),
+	array(
+		'name' => 'ri-recycle-content-img',
+		'title' => __('RI Recyling Content with Image Block'),
+		'description' => __('A Custom content block with an image that can be on either side'),
+		'render_callback' => 'my_acf_block_render_callback',
+		'category' => 'text',
+		'icon' => 'format-image',
+		'keywords' => array('RI Recycle content with image', 'content with image', 'image content')
+	),
+	array(
+		'name' => 'ri-recycle-cta',
+		'title' => __('RI Recyling Call to Action (CTA) block'),
+		'description' => __('A Custom call to action block with a button'),
+		'render_callback' => 'my_acf_block_render_callback',
+		'category' => 'text',
+		'icon' => 'format-image',
+		'keywords' => array('RI Recycle CTA', 'CTA', 'call to action', 'button')
+	),
+	array(
+		'name' => 'ri-recycle-food-waste-calculator',
+		'title' => __('RI Recyling Food waste calculator block'),
+		'description' => __('A Custom food waste calculator block'),
+		'render_callback' => 'my_acf_block_render_callback',
+		'category' => 'text',
+		'icon' => 'format-image',
+		'keywords' => array('RI Recycle food waste estimator', 'food waste', 'calculator', 'calc')
+	),
+	array(
+		'name' => 'ri-recycle-in-the-news',
+		'title' => __('RI Recyling In The News block'),
+		'description' => __('A Custom news block with links to our articles'),
+		'render_callback' => 'my_acf_block_render_callback',
+		'category' => 'text',
+		'icon' => 'format-image',
+		'keywords' => array('RI Recycle in the news', 'in the news', 'news', 'projects')
+	),
+	array(
+		'name' => 'ri-recycle-video-archive',
+		'title' => __('RI Recyling Video Archive block'),
+		'description' => __('A Custom news block to showcase youtube videos'),
+		'render_callback' => 'my_acf_block_render_callback',
+		'category' => 'text',
+		'icon' => 'format-image',
+		'keywords' => array('RI Recycle video archive', 'video archive', 'archive', 'projects')
 	),
 
 );

@@ -1,0 +1,80 @@
+.ri-recycle-hero-wrap
+  +mobile-up
+    padding: 24px 0px 48px
+  +tablet-up
+    padding: 48px 0px
+  width: 100%
+  position: relative
+
+  .content-con
+    +mobile-up
+      width: 100%
+      text-align: left
+    +tablet-up
+      width: 45%
+      text-align: center
+    +desktop
+      width: 40%
+    margin: 0px auto 24px
+
+    h5
+      +mobile-up
+        margin-bottom: 24px
+      +tablet-up
+        margin-bottom: 32px
+      color: $logo_green
+      font-weight: 500
+
+    h1
+      +mobile-up
+        margin-bottom: 24px
+        width: 80%
+      +tablet-up
+        margin-bottom: 32px
+        margin-left: auto
+        margin-right: auto
+
+  .floating-text-con
+    align-items: center
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    .indiv-text
+      +mobile-up
+        width: 100%
+        text-align: left
+      +tablet-up
+        width: 28%
+        text-align: center
+      overflow: hidden
+
+      p
+        position: relative
+        font-weight: $medium
+        left: -100%
+        opacity: 0
+        animation: slideIn 1.5s ease-out forwards
+
+  .hero-image
+    +background-image
+    +mobile-up
+      height: 325px
+    +tablet-up
+      height: 525px
+    width: 100%
+    position: relative
+    margin-bottom: 24px
+
+  .btn-con
+    text-align: center
+    display: block
+
+@keyframes slideIn
+  0%
+    left: -100%
+    opacity: 0
+  100%
+    left: 0
+    opacity: 1

@@ -40,6 +40,8 @@
     <style type="text/css"><?php the_field('fig_custom_css', 'option'); ?></style>
   <?php } ?>
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
+
   <!-- favicon -->
   <?php if( get_field('fig_logo', 'option') ) { ?>
     <link rel="shortcut icon" href="<?php the_field('fig_favicon', 'option'); ?>">
