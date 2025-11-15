@@ -3,9 +3,31 @@
     "title": "Block: Main Content",
     "fields": [
         {
+            "key": "field_6918ad6802e78",
+            "label": "Full Width",
+            "name": "content_full_width",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_5c1bedcaef2fa",
             "label": "Content Area",
             "name": "content_area",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -39,5 +61,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1620919925
+    "show_in_rest": 0,
+    "modified": 1763225223
 }
