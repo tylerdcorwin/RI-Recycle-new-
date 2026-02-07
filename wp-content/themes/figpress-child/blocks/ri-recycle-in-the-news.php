@@ -2,7 +2,7 @@
   $title = get_field('ri_recycle_news_title');
 ?>
 
-<section class="recycle-news-wrap" data-aos="fade-up">
+<section class="recycle-news-wrap">
   <div class="outer-container">
     <?php if ( $title ) { ?>
       <h2><?php echo $title; ?></h2>

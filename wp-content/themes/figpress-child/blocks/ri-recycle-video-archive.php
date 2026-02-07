@@ -2,7 +2,7 @@
   $title = get_field('recycle_video_archive_title');
 ?>
 
-<section class="recycle-video-archive-wrap" data-aos="fade-up">
+<section class="recycle-video-archive-wrap">
   <div class="outer-container">
     <?php if ( $title ) { ?>
       <h2><?php echo $title; ?></h2>
